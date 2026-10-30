@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alfa Water Technologies | Coming soon</title>
+<meta name="description" content="پینے کا پانی ہی نہیں، پورے گھر کا پانی۔ Not just the water you drink. All of your home's water. Coming soon.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alfa Water Technologies | Coming soon">
+<meta property="og:description" content="پینے کا پانی ہی نہیں، پورے گھر کا پانی۔ Not just the water you drink. All of your home's water.">
+<meta property="og:url" content="https://www.alfawater.pk/">
+<meta property="og:image" content="https://www.alfawater.pk/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.alfawater.pk/">
+<meta name="theme-color" content="#F1EEE7">
+<script>document.documentElement.className+=" js"</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/nastaliq-600.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Nastaliq";src:url(fonts/nastaliq-600.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces";src:url(fonts/fraunces-600.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces";src:url(fonts/fraunces-400-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Outfit";src:url(fonts/outfit-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Outfit";src:url(fonts/outfit-600.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}
+</style>
+<style>
+/* Layout: the film on top (4:5), the name, tagline and coming soon under it; side by side on wide screens. */
+:root{
+  color-scheme: light;
+  --page:#F1EEE7;     /* chuna, limewash */
+  --ink:#22303A;
+  --ink-soft:#56636C;
+  --key:#7E2E57;      /* phalsa, for the 2 key words (temporary) */
+  --line:#D6D0C3;
+  --film-bg:#1C1A18;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%}
+body{background:var(--page);color:var(--ink);font-family:"Outfit",system-ui,sans-serif}
+main{min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(20px,4vw,64px);
+  max-width:1280px;margin:0 auto;padding-block:clamp(20px,4vw,48px);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.film{position:relative;width:min(100%, 560px, calc(54svh * .8));justify-self:center;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:var(--film-bg);box-shadow:0 18px 50px rgba(34,48,58,.18)}
+.film svg{display:block;width:100%;height:100%}
+.replay{position:absolute;right:10px;bottom:10px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(20,18,16,.55);color:#fff;cursor:pointer;display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .6s}
+.replay.on{opacity:1;visibility:visible}
+.replay:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.copy{display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(12px,2vw,22px)}
+.name .alfa{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(38px,5vw,68px);line-height:1;color:var(--ink);letter-spacing:-.5px}
+.name .tech{display:block;margin-top:8px;font-weight:600;font-size:clamp(11px,1vw,13px);letter-spacing:.42em;text-transform:uppercase;color:var(--ink-soft);padding-left:.42em}
+.rule{width:56px;height:2px;background:var(--line);border-radius:2px}
+.tag{display:flex;flex-direction:column;align-items:center;gap:6px;min-height:clamp(96px,10vw,130px)}
+.urdu{font-family:"Nastaliq",serif;font-weight:600;font-size:clamp(20px,2.6vw,38px);line-height:2.1;color:var(--ink);direction:rtl;white-space:nowrap}
+.urdu .w{display:inline-block;transition:color .8s ease,transform .8s ease}
+.urdu .w.key{color:var(--key)}
+.english{font-family:"Fraunces",Georgia,serif;font-style:italic;font-size:clamp(17px,1.7vw,22px);line-height:1.45;color:var(--ink-soft);transition:opacity 1s ease,transform 1s ease}
+.nb{display:inline-block}
+.soon{display:inline-flex;align-items:center;gap:14px;padding:10px 22px 10px 18px;border-radius:999px;border:1.5px solid var(--line);background:rgba(255,255,255,.5)}
+.soon .dot{width:10px;height:10px;border-radius:50%;background:var(--key);position:relative}
+.soon .dot::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--key);opacity:0;animation:ping 2.2s ease-out infinite}
+@keyframes ping{0%{opacity:.6;transform:scale(.6)}100%{opacity:0;transform:scale(1.8)}}
+.soon .ur,.soon .en{white-space:nowrap}
+.soon .ur{font-family:"Nastaliq",serif;font-weight:600;font-size:20px;line-height:1.9;color:var(--ink);direction:rtl}
+.soon .en{font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink)}
+.soon .bar{width:1px;height:22px;background:var(--line)}
+.js .tag:not(.on) .w{color:rgba(34,48,58,.10);transform:translateY(6px)}
+.js .tag:not(.on) .english{opacity:0;transform:translateY(8px)}
+.tag.on .w{color:var(--ink)}
+.tag.on .w.key{color:var(--key)}
+@media (max-width:900px){
+  main{grid-template-columns:1fr;gap:12px;padding-block:12px 24px;min-height:auto}
+  .copy{gap:10px}
+  .name .alfa{font-size:34px}
+  .tag{min-height:auto}
+}
+@media (max-width:380px){
+  .soon{gap:10px;padding:8px 16px 8px 14px}
+  .soon .ur{font-size:18px}
+  .soon .en{font-size:12px;letter-spacing:.16em}
+}
+/* film internals */
+.sc{visibility:hidden;opacity:0}
+.sc.first{visibility:visible;opacity:1}
+</style>
+</head>
+<body>
+<main>
+  <div class="film">
+    <svg id="film" viewBox="0 0 800 1000" role="img" aria-label="A mother in her Lahore kitchen fills a glass from the tap to cook. Held to the window light, the water is not clear, and she stops. Her water is tested on her own kitchen counter in front of her family. A filter is fitted on the main line and the dirt stays in it. Months later the family sees the rust its cartridge stopped. She holds a new glass to the light; it is clear, she pours it into the karahi, and the family sits together in the kitchen while the wazu tap outside runs clear.">
+      <defs>
+        <!-- floral wall tile -->
+        <pattern id="tile" width="56" height="56" patternUnits="userSpaceOnUse">
+          <rect width="56" height="56" fill="#EBE1CD"/>
+          <rect width="56" height="56" fill="none" stroke="#CFC2A8" stroke-width="1.4"/>
+          <g transform="translate(28 28)" opacity=".9">
+            <ellipse rx="5" ry="11" fill="#D59A92"/><ellipse rx="11" ry="5" fill="#D59A92"/>
+            <ellipse rx="3" ry="7" fill="#B9706A" transform="rotate(45)"/><ellipse rx="3" ry="7" fill="#B9706A" transform="rotate(-45)"/>
+            <circle r="3" fill="#C9A645"/>
+          </g>
+          <g fill="#A9A256" opacity=".7"><circle cx="0" cy="0" r="4"/><circle cx="56" cy="0" r="4"/><circle cx="0" cy="56" r="4"/><circle cx="56" cy="56" r="4"/></g>
+        </pattern>
+        <pattern id="tileS" width="28" height="28" patternUnits="userSpaceOnUse">
+          <rect width="28" height="28" fill="#EBE1CD"/><rect width="28" height="28" fill="none" stroke="#CFC2A8" stroke-width="1"/>
+          <g transform="translate(14 14)"><ellipse rx="2.5" ry="5.5" fill="#D59A92"/><ellipse rx="5.5" ry="2.5" fill="#D59A92"/><circle r="1.5" fill="#C9A645"/></g>
+        </pattern>
+        <!-- her lawn print: haldi ground, small rani, teal and green flowers -->
+        <pattern id="lawn" width="36" height="36" patternUnits="userSpaceOnUse">
+          <rect width="36" height="36" fill="#E7B23C"/>
+          <g transform="translate(9 9)"><circle r="4" fill="#C2306E"/><circle r="1.6" fill="#F6E3A8"/></g>
+          <g transform="translate(27 26)"><circle r="3.4" fill="#1F8A8A"/><circle r="1.3" fill="#F6E3A8"/></g>
+          <path d="M24 8 q4 -4 8 0 q-4 4 -8 0z" fill="#5E8C3A"/>
+          <path d="M6 26 q3 -3 6 0 q-3 3 -6 0z" fill="#5E8C3A"/>
+          <circle cx="18" cy="18" r="1.4" fill="#2F3B6B"/>
+        </pattern>
+        <pattern id="dup" width="22" height="22" patternUnits="userSpaceOnUse">
+          <rect width="22" height="22" fill="#C2306E"/>
+          <circle cx="5" cy="5" r="1.8" fill="#F2C24B"/><circle cx="16" cy="15" r="1.5" fill="#F7E7EE"/><circle cx="16" cy="4" r="1" fill="#F2C24B"/>
+        </pattern>
+        <pattern id="khaki" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#8D8670"/><path d="M0 10 L10 0" stroke="#847D67" stroke-width="1"/></pattern>
+        <!-- light and water -->
+        <linearGradient id="winLight" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF7E2"/><stop offset="1" stop-color="#FFE3A3"/></linearGradient>
+        <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF4D0" stop-opacity=".9"/><stop offset="1" stop-color="#FFF4D0" stop-opacity="0"/></radialGradient>
+        <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7E8684"/><stop offset=".35" stop-color="#E9EDE9"/><stop offset=".6" stop-color="#B5BCB9"/><stop offset="1" stop-color="#6E7573"/></linearGradient>
+        <linearGradient id="steelV" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9EDE9"/><stop offset="1" stop-color="#8A918F"/></linearGradient>
+        <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7A5539"/><stop offset="1" stop-color="#5A3D29"/></linearGradient>
+        <linearGradient id="skin" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E2B089"/><stop offset="1" stop-color="#A9744F"/></linearGradient>
+        <linearGradient id="faceShade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E7B98F"/><stop offset=".45" stop-color="#C48C63"/><stop offset="1" stop-color="#8E5E44"/></linearGradient>
+        <linearGradient id="dirty" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9C08A" stop-opacity=".55"/><stop offset="1" stop-color="#B9773A" stop-opacity=".78"/></linearGradient>
+        <linearGradient id="clear" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9F3FF" stop-opacity=".6"/><stop offset=".5" stop-color="#9ED9F7" stop-opacity=".7"/><stop offset="1" stop-color="#5FB8EA" stop-opacity=".8"/></linearGradient>
+        <linearGradient id="crystal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6CC3F0"/><stop offset=".45" stop-color="#C9EEFF"/><stop offset="1" stop-color="#7FCDF4"/></linearGradient>
+        <linearGradient id="rust" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C98A45"/><stop offset=".35" stop-color="#B8742F"/><stop offset=".75" stop-color="#A3642A"/><stop offset="1" stop-color="#8D5822"/></linearGradient>
+        <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ECE8DD"/><stop offset="1" stop-color="#D9D3C4"/></linearGradient>
+        <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BDB6A7"/><stop offset="1" stop-color="#A39B8B"/></linearGradient>
+        <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter>
+        <filter id="soft2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.2"/></filter>
+        <filter id="grain" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" result="n"/>
+          <feColorMatrix type="saturate" values="0" in="n" result="g"/>
+          <feComponentTransfer in="g"><feFuncA type="table" tableValues="0 .07"/></feComponentTransfer>
+        </filter>
+        <clipPath id="frame"><rect width="800" height="1000"/></clipPath>
+        <!-- glass shape, centred on (0,0) top centre -->
+        <clipPath id="glassClip"><path d="M-40 0 L40 0 L35 120 Q0 128 -35 120 Z"/></clipPath>
+        <clipPath id="glassClipW"><path d="M-40 0 L40 0 L35 120 Q0 128 -35 120 Z"/></clipPath>
+        <clipPath id="bowlClip"><path d="M-62 0 L62 0 L58 230 Q0 248 -58 230 Z"/></clipPath>
+        <clipPath id="tubeClip"><rect x="-8" y="0" width="16" height="70" rx="8"/></clipPath>
+      </defs>
+
+      <g clip-path="url(#frame)">
+        <rect width="800" height="1000" fill="#1C1A18"/>
+
+        <!-- ============ SCENE K: the kitchen (open, nal, stove) ============ -->
+        <g id="K" class="sc first"><g id="Kcam">
+          <rect width="800" height="640" fill="url(#tile)"/>
+          <!-- shelves top right -->
+          <g id="shelves">
+            <rect x="470" y="150" width="330" height="10" fill="#8A6A4C"/>
+            <rect x="470" y="262" width="330" height="10" fill="#8A6A4C"/>
+            <g transform="translate(490 98)"><rect width="56" height="52" rx="6" fill="url(#steel)"/><rect y="-6" width="56" height="8" rx="3" fill="#C9CFCC"/></g>
+            <g transform="translate(560 112)"><rect width="44" height="38" rx="5" fill="url(#steel)"/></g>
+            <g transform="translate(616 84)"><ellipse cx="34" cy="34" rx="34" ry="34" fill="url(#steel)" opacity=".9"/><ellipse cx="34" cy="34" rx="24" ry="24" fill="none" stroke="#9AA19F" stroke-width="2"/></g>
+            <g transform="translate(694 100)"><rect width="50" height="50" rx="6" fill="url(#steel)"/></g>
+            <g id="jars" transform="translate(484 210)">
+              <g><rect width="30" height="52" rx="5" fill="#F4EFE4" opacity=".9"/><rect y="20" width="30" height="32" rx="4" fill="#C7861C"/><rect y="-6" width="30" height="9" rx="3" fill="#2F3B6B"/></g>
+              <g transform="translate(40 0)"><rect width="30" height="52" rx="5" fill="#F4EFE4" opacity=".9"/><rect y="16" width="30" height="36" rx="4" fill="#8E2F23"/><rect y="-6" width="30" height="9" rx="3" fill="#1F8A8A"/></g>
+              <g transform="translate(80 0)"><rect width="30" height="52" rx="5" fill="#F4EFE4" opacity=".9"/><rect y="24" width="30" height="28" rx="4" fill="#E7D9B5"/><rect y="-6" width="30" height="9" rx="3" fill="#C9A645"/></g>
+              <g transform="translate(120 0)"><rect width="30" height="52" rx="5" fill="#F4EFE4" opacity=".9"/><rect y="22" width="30" height="30" rx="4" fill="#556B2F"/><rect y="-6" width="30" height="9" rx="3" fill="#C2306E"/></g>
+              <g transform="translate(166 -8)"><rect width="70" height="60" rx="8" fill="url(#steel)"/></g>
+              <g transform="translate(250 0)"><rect width="40" height="52" rx="6" fill="url(#steel)"/></g>
+            </g>
+          </g>
+          <!-- window -->
+          <g id="Kwin">
+            <rect x="40" y="70" width="360" height="352" fill="url(#winLight)"/>
+            <g filter="url(#soft)" opacity=".55"><ellipse cx="130" cy="150" rx="90" ry="40" fill="#8FA36A"/><ellipse cx="320" cy="120" rx="70" ry="34" fill="#9DB27A"/><rect x="40" y="300" width="360" height="122" fill="#E5D4B2"/></g>
+            <g id="Kgrill" stroke="#3B393A" stroke-width="5"></g>
+            <rect x="40" y="70" width="360" height="352" fill="none" stroke="#E2D8C2" stroke-width="16"/>
+            <rect x="30" y="420" width="380" height="18" rx="3" fill="#E7DDC8"/>
+          </g>
+          <!-- light shaft -->
+          <path id="Kshaft" d="M400 90 L800 360 L800 640 L410 430 Z" fill="#FFE9B8" opacity=".14"/>
+          <!-- counter -->
+          <path d="M0 600 L800 600 L800 690 L0 690 Z" fill="#E9E3D6"/>
+          <rect x="0" y="686" width="800" height="12" fill="#CFC6B4"/>
+          <rect x="0" y="698" width="800" height="302" fill="url(#wood)"/>
+          <g stroke="#4A3222" stroke-width="3" fill="none"><rect x="22" y="720" width="240" height="270" rx="4"/><rect x="282" y="720" width="240" height="270" rx="4"/><rect x="542" y="720" width="240" height="270" rx="4"/></g>
+          <g fill="#C9A645"><rect x="236" y="830" width="8" height="40" rx="3"/><rect x="300" y="830" width="8" height="40" rx="3"/><rect x="556" y="830" width="8" height="40" rx="3"/></g>
+          <!-- sink -->
+          <path d="M110 612 L340 612 L330 650 L120 650 Z" fill="#9AA19F"/><path d="M118 616 L332 616 L325 645 L125 645 Z" fill="#7A8280"/>
+          <!-- nal: swan neck -->
+          <g id="nal">
+            <rect x="292" y="560" width="16" height="48" rx="5" fill="url(#steel)"/>
+            <path d="M300 566 C300 500 240 488 226 528" stroke="#C9CFCC" stroke-width="12" fill="none" stroke-linecap="round"/>
+            <path d="M300 566 C300 500 240 488 226 528" stroke="#F4F6F3" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/>
+            <rect x="218" y="524" width="16" height="10" rx="3" fill="#8A918F"/>
+            <g id="nalKnob" transform="translate(312 578)"><rect x="-4" y="-14" width="8" height="28" rx="3" fill="#B5BCB9"/><rect x="-14" y="-4" width="28" height="8" rx="3" fill="#D7DCD9"/></g>
+          </g>
+          <!-- stream from the nal -->
+          <rect id="Kstream" x="222" y="534" width="8" height="0" rx="4" fill="#D9B47E" opacity=".75"/>
+          <!-- window light through the glass: a beam, and the patch it makes on the counter -->
+          <g id="patch" opacity="0">
+            <path d="M556 410 L626 392 L700 650 L590 664 Z" fill="#B78A55" opacity=".22"/>
+            <ellipse cx="645" cy="657" rx="62" ry="17" fill="#8E6A45" opacity=".7"/>
+            <g id="patchSpecks" fill="#5E3A14"></g>
+          </g>
+          <g id="patchBright" opacity="0">
+            <path d="M556 410 L626 392 L700 650 L590 664 Z" fill="#FFF3C8" opacity=".5"/>
+            <ellipse cx="645" cy="657" rx="96" ry="30" fill="url(#glow)"/>
+            <ellipse cx="645" cy="657" rx="64" ry="18" fill="#FFFBEA"/>
+            <g stroke="#FFFFFF" stroke-width="3.2" fill="none" id="caustic">
+              <path d="M592 652 q13 -7 26 0 t26 0 t26 0 t26 0"/><path d="M600 664 q13 -6 26 0 t26 0 t26 0"/>
+            </g>
+          </g>
+          <!-- stove + karahi -->
+          <g id="stove">
+            <rect x="560" y="570" width="220" height="40" rx="6" fill="url(#steelV)"/>
+            <rect x="560" y="606" width="220" height="10" fill="#5F6664"/>
+            <g id="knob1" transform="translate(600 590)"><circle r="9" fill="#2B2B2B"/><rect x="-1.5" y="-8" width="3" height="8" fill="#ddd"/></g>
+            <g id="knob2" transform="translate(740 590)"><circle r="9" fill="#2B2B2B"/><rect x="-1.5" y="-8" width="3" height="8" fill="#ddd"/></g>
+            <g id="flame" transform="translate(690 566)">
+              <path d="M-38 4 q4 -14 8 0 q4 -14 8 0 q4 -14 8 0 q4 -14 8 0 q4 -14 8 0 q4 -14 8 0 q4 -14 8 0 q4 -14 8 0 q4 -14 8 0z" fill="#4F86E8"/>
+            </g>
+            <!-- karahi -->
+            <path d="M622 520 L758 520 C752 556 728 572 690 572 C652 572 628 556 622 520 Z" fill="#3E3B38"/>
+            <ellipse cx="690" cy="520" rx="68" ry="12" fill="#2A2725"/>
+            <ellipse id="masala" cx="690" cy="522" rx="58" ry="8" fill="#7E3A1C"/>
+            <ellipse cx="672" cy="520" rx="16" ry="3" fill="#B0602E" opacity=".7"/>
+            <path d="M616 520 q-14 -2 -14 8 q0 6 14 4" fill="none" stroke="#3E3B38" stroke-width="5"/>
+            <path d="M764 520 q14 -2 14 8 q0 6 -14 4" fill="none" stroke="#3E3B38" stroke-width="5"/>
+          </g>
+          <g id="steamK" fill="none" stroke="#FFFFFF" stroke-linecap="round" opacity=".55" stroke-width="7" filter="url(#soft2)">
+            <path class="stm" d="M670 505 q-14 -30 0 -60 t0 -60 t0 -60"/>
+            <path class="stm" d="M700 505 q14 -30 0 -60 t0 -60 t0 -60"/>
+            <path class="stm" d="M688 505 q-10 -26 0 -52 t0 -52"/>
+          </g>
+          <!-- her hand with the glass (moved by the timeline) -->
+          <g id="Kglass" transform="translate(226 548)" opacity="0">
+            <!-- hand wrapping the glass from the right, forearm to the frame edge -->
+            <g id="KhandGroup">
+              <path d="M60 150 C100 190 150 260 210 330 L300 330 C250 250 190 170 120 110 Z" fill="url(#lawn)"/>
+              <path d="M30 40 C52 30 74 40 82 62 L118 120 C124 140 110 160 90 158 L44 120 Z" fill="url(#skin)"/>
+              <g fill="#D6A27A" stroke="#9A6A4A" stroke-width="1">
+                <path d="M30 34 C18 34 6 36 -4 40 C-12 44 -8 54 0 54 C10 52 20 50 34 50 Z"/>
+                <path d="M32 56 C20 58 8 62 -2 68 C-10 72 -6 82 2 82 C12 78 22 74 36 72 Z"/>
+                <path d="M34 78 C22 82 10 88 2 94 C-6 98 0 108 8 106 C18 100 26 96 38 94 Z"/>
+                <path d="M40 98 C30 104 18 110 8 116 C2 120 8 128 14 126 C22 120 30 116 44 114 Z"/>
+              </g>
+              <g id="Kbangles" transform="translate(96 140) rotate(40)">
+                <ellipse rx="22" ry="8" fill="none" stroke="#C2306E" stroke-width="4"/>
+                <ellipse cy="7" rx="22" ry="8" fill="none" stroke="#E7B23C" stroke-width="3.4"/>
+                <ellipse cy="14" rx="22" ry="8" fill="none" stroke="#1F8A8A" stroke-width="4"/>
+              </g>
+            </g>
+                      <g id="KglassBody">
+              <path d="M-40 0 L40 0 L35 120 Q0 128 -35 120 Z" fill="rgba(255,255,255,.25)" stroke="#FFFFFF" stroke-width="2.5"/>
+              <g clip-path="url(#glassClip)">
+                <rect id="KwaterD" x="-45" y="120" width="90" height="0" fill="url(#dirty)"/>
+                <rect id="KwaterC" x="-45" y="120" width="90" height="0" fill="url(#clear)" opacity="0"/>
+                <g id="KglassSpecks" fill="#6D4416"></g>
+                <g stroke="#FFFFFF" stroke-width="1.4" opacity=".35"><path d="M-30 4 L-26 118"/><path d="M-15 4 L-13 122"/><path d="M0 4 L0 124"/><path d="M15 4 L13 122"/><path d="M30 4 L26 118"/></g>
+              </g>
+              <path d="M-32 6 L-27 112" stroke="#FFFFFF" stroke-width="4" opacity=".55" stroke-linecap="round"/>
+            </g>
+</g>
+          <!-- pour stream (for the ending) -->
+          <path id="Kpour" d="M628 458 C632 476 640 496 650 516" stroke="#8ED2F5" stroke-width="14" fill="none" stroke-linecap="round" opacity="0"/><path id="Kpour2" d="M628 460 C632 478 638 496 646 514" stroke="#FFFFFF" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0"/><g id="splashK" opacity="0" fill="#BFE8FF"><circle cx="640" cy="512" r="4"/><circle cx="664" cy="508" r="3"/><circle cx="654" cy="500" r="2.5"/></g>
+        </g></g>
+
+        <!-- ============ SCENE W: at the window, her profile ============ -->
+        <g id="W" class="sc"><g id="Wcam">
+          <rect width="800" height="1000" fill="#3A3330"/>
+          <rect x="0" y="0" width="560" height="860" fill="url(#winLight)"/>
+          <g filter="url(#soft)" opacity=".5"><ellipse cx="160" cy="180" rx="140" ry="60" fill="#8FA36A"/><ellipse cx="420" cy="120" rx="120" ry="50" fill="#9DB27A"/><rect x="0" y="560" width="560" height="300" fill="#E5D4B2"/></g>
+          <g id="Wgrill" stroke="#3B393A" stroke-width="9"></g>
+          <rect x="0" y="0" width="560" height="860" fill="none" stroke="#E2D8C2" stroke-width="26"/>
+          <rect id="sill" x="-10" y="856" width="600" height="40" rx="4" fill="#E7DDC8"/>
+          <rect x="-10" y="896" width="600" height="104" fill="url(#tile)"/>
+          <!-- grill shadow on the sill (moves to show time) -->
+          <g id="sillShadow" opacity=".22" fill="#3B393A"></g>
+          <!-- her: dupatta, face in profile looking left -->
+          <g id="her">
+            <path d="M536 1000 C532 840 520 680 506 560 C560 538 680 540 800 560 L800 1000 Z" fill="url(#lawn)"/><path d="M506 562 C540 590 600 596 640 578" fill="none" stroke="#C2306E" stroke-width="6"/>
+            <path id="neck" d="M524 474 C530 500 532 530 526 570 L598 574 C592 540 592 510 598 484 Z" fill="#A3714F"/><path d="M528 482 C534 506 536 534 530 566" stroke="#FFE2B0" stroke-width="2" fill="none" opacity=".6"/>
+            <path id="face" d="M520 292 C506 300 500 318 498 336 C496 346 494 352 496 358 C490 372 480 386 470 398 C466 404 470 408 478 409 L488 410 C486 416 488 420 484 424 C480 428 482 432 486 434 C482 438 482 444 488 448 C490 456 486 462 488 468 C492 480 506 488 524 490 L590 486 L604 300 Z" fill="url(#faceShade)"/>
+            <path id="rim" d="M520 292 C506 300 500 318 498 336 C496 346 494 352 496 358 C490 372 480 386 470 398 C466 404 470 408 478 409 L488 410 C486 416 488 420 484 424 C480 428 482 432 486 434 C482 438 482 444 488 448 C490 456 486 462 488 468 C492 480 506 488 524 490" fill="none" stroke="#FFE2B0" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="M518 296 C530 290 560 290 580 300 L572 318 C556 310 536 308 520 312 Z" fill="#1E1512"/>
+            <!-- eye and brow -->
+            <path id="eye" d="M506 362 C512 357 522 357 528 362 C522 366 512 366 506 362 Z" fill="#2A1C16"/>
+            <path id="lid" d="M504 360 C512 353 524 353 531 359" fill="none" stroke="#3A2620" stroke-width="2.4" stroke-linecap="round"/>
+            <path id="brow" d="M502 344 C510 339 522 338 534 341" fill="none" stroke="#24180F" stroke-width="4.5" stroke-linecap="round"/>
+            <path id="mouth" d="M484 434 C488 435 492 434 496 433" fill="none" stroke="#7A3F33" stroke-width="2.2" stroke-linecap="round"/>
+            <!-- dupatta on her head -->
+            <path id="dupatta" d="M512 300 C512 250 560 214 620 214 C700 214 750 270 760 360 C770 470 790 600 800 700 L800 1000 L700 1000 C700 860 650 720 600 640 C590 560 588 480 600 420 C600 360 580 320 540 304 C530 300 520 300 512 300 Z" fill="url(#dup)"/>
+            <path d="M512 300 C512 250 560 214 620 214 C700 214 750 270 760 360" fill="none" stroke="#F2C24B" stroke-width="7"/>
+            <path d="M512 300 C512 250 560 214 620 214" fill="none" stroke="#FFE2B0" stroke-width="2.5" opacity=".9"/>
+          </g>
+          <!-- the glass at the window, held up -->
+          <g id="Wglass" transform="translate(300 300) scale(1.6)">
+            <path d="M-40 0 L40 0 L35 120 Q0 128 -35 120 Z" fill="rgba(255,255,255,.18)" stroke="#FFFFFF" stroke-width="2"/>
+            <g clip-path="url(#glassClipW)">
+              <!-- grill seen through the water -->
+              <g id="WthroughSharp" stroke="#3B393A" stroke-width="4" opacity="0"><path d="M-22 10 L-22 130"/><path d="M14 10 L14 130"/></g>
+              <g id="WthroughBlur" stroke="#3B393A" stroke-width="7" opacity=".35" filter="url(#soft2)"><path d="M-20 30 L-20 130"/><path d="M16 30 L16 130"/></g>
+              <rect id="WwaterD" x="-45" y="20" width="90" height="110" fill="url(#dirty)"/>
+              <rect id="WwaterC" x="-45" y="20" width="90" height="110" fill="url(#clear)" opacity="0"/>
+              <g id="WglassSpecks" fill="#6D4416"></g>
+              <rect id="Wsettle" x="-45" y="114" width="90" height="10" fill="#8D5822" opacity="0"/>
+              <path id="Wshine" d="M-30 26 L-26 116" stroke="#FFFFFF" stroke-width="4" opacity=".5" stroke-linecap="round"/>
+            </g>
+            <path d="M-40 20 L40 20" stroke="#FFFFFF" stroke-width="1.5" opacity=".7"/>
+          </g>
+          <!-- her hand holding the glass at the window -->
+          <g id="Whand">
+            <path d="M378 520 C420 560 470 640 520 760 L600 760 C560 640 500 540 430 470 Z" fill="url(#lawn)"/>
+            <path d="M356 380 C380 372 400 388 404 410 L440 470 C444 494 426 510 406 506 L362 456 Z" fill="#B57E58"/>
+            <g fill="#C48C63" stroke="#8E5E44" stroke-width="1.4">
+              <path d="M358 360 C340 360 318 362 300 368 C290 372 294 386 304 386 C322 384 344 382 362 382 Z"/>
+              <path d="M360 392 C338 394 316 398 298 404 C288 408 292 422 302 420 C322 416 344 412 364 412 Z"/>
+              <path d="M362 422 C340 426 318 432 302 438 C292 442 298 456 308 452 C326 446 346 442 366 440 Z"/>
+            </g>
+            <path d="M356 380 L360 358" stroke="#FFE2B0" stroke-width="2" opacity=".6"/>
+            <g transform="translate(428 492) rotate(48)"><ellipse rx="30" ry="10" fill="none" stroke="#C2306E" stroke-width="5"/><ellipse cy="9" rx="30" ry="10" fill="none" stroke="#E7B23C" stroke-width="4.5"/><ellipse cy="18" rx="30" ry="10" fill="none" stroke="#1F8A8A" stroke-width="5"/></g>
+          </g>
+          <!-- fingers letting go on the sill (sill shot) -->
+          <g id="Wsill" opacity="0">
+            <g id="sillGlass" transform="translate(300 742)">
+              <path d="M-40 0 L40 0 L35 120 Q0 128 -35 120 Z" fill="rgba(255,255,255,.22)" stroke="#FFFFFF" stroke-width="2"/>
+              <g clip-path="url(#glassClip)">
+                <rect x="-45" y="14" width="90" height="116" fill="url(#dirty)"/>
+                <g id="sillSpecks" fill="#6D4416"></g>
+                <rect id="sillSettle" x="-45" y="114" width="90" height="10" fill="#8D5822" opacity="0"/>
+              </g>
+            </g>
+            <g id="sillFingers">
+              <g fill="#C48C63" stroke="#8E5E44" stroke-width="1.4">
+                <path d="M420 770 C390 768 360 770 346 776 C336 780 340 794 350 794 C370 790 396 788 424 790 Z"/>
+                <path d="M424 800 C394 800 366 804 350 810 C340 814 344 828 354 826 C374 822 400 820 428 820 Z"/>
+              </g>
+              <path d="M424 760 L520 740 L560 840 L440 860 Z" fill="#B57E58"/>
+              <path d="M520 740 L640 700 L700 880 L560 900 Z" fill="url(#lawn)"/>
+            </g>
+          </g>
+        </g></g>
+
+        <!-- ============ SCENE T: the test on her counter ============ -->
+        <g id="T" class="sc"><g id="Tcam">
+          <rect width="800" height="420" fill="url(#tile)"/>
+          <path d="M0 420 L800 420 L800 1000 L0 1000 Z" fill="#E9E3D6"/>
+          <path d="M0 420 L800 420" stroke="#CFC6B4" stroke-width="3"/>
+          <ellipse cx="400" cy="560" rx="420" ry="140" fill="#FFF3D6" opacity=".35"/>
+          <!-- kit case -->
+          <g id="kit" transform="translate(60 520)">
+            <g id="kitLid" transform="translate(0 0)"><rect x="0" y="-200" width="300" height="200" rx="12" fill="#3E4A52"/><rect x="14" y="-186" width="272" height="172" rx="8" fill="#2E3840"/></g>
+            <rect x="0" y="0" width="300" height="130" rx="12" fill="#46535C"/>
+            <rect x="12" y="10" width="276" height="56" rx="6" fill="#2B343A"/>
+            <!-- tubes (soft neutral, already changed) -->
+            <g id="tubes" filter="url(#soft2)">
+              <g transform="translate(40 -40)"><rect x="-9" y="0" width="18" height="76" rx="9" fill="#FFF" opacity=".5"/><rect x="-8" y="30" width="16" height="44" rx="8" fill="#F3E7A8"/></g>
+              <g transform="translate(72 -40)"><rect x="-9" y="0" width="18" height="76" rx="9" fill="#FFF" opacity=".5"/><rect x="-8" y="30" width="16" height="44" rx="8" fill="#E8C37A"/></g>
+              <g transform="translate(104 -40)"><rect x="-9" y="0" width="18" height="76" rx="9" fill="#FFF" opacity=".5"/><rect x="-8" y="30" width="16" height="44" rx="8" fill="#F2C7C9"/></g>
+              <g transform="translate(136 -40)"><rect x="-9" y="0" width="18" height="76" rx="9" fill="#FFF" opacity=".5"/><rect x="-8" y="30" width="16" height="44" rx="8" fill="#F6E9C9"/></g>
+              <g transform="translate(168 -40)"><rect x="-9" y="0" width="18" height="76" rx="9" fill="#FFF" opacity=".5"/><rect x="-8" y="30" width="16" height="44" rx="8" fill="#EBD3B0"/></g>
+              <g transform="translate(200 -40)"><rect x="-9" y="0" width="18" height="76" rx="9" fill="#FFF" opacity=".5"/><rect x="-8" y="30" width="16" height="44" rx="8" fill="#F4DCDD"/></g>
+              <rect x="20" y="20" width="200" height="12" rx="4" fill="#9AA3A8"/>
+            </g>
+            <g id="dropper" transform="translate(104 -120)" opacity="0"><rect x="-5" y="-50" width="10" height="56" rx="4" fill="#E8EDEF"/><rect x="-9" y="-70" width="18" height="24" rx="8" fill="#5C6A73"/><circle id="drop" cy="12" r="4" fill="#E9D9A0"/></g>
+          </g>
+          <!-- her hand that sets the glass down -->
+          <g id="Thand" opacity="0">
+            <path d="M560 760 C600 760 660 800 700 860 L800 860 L800 1000 L660 1000 C620 920 580 860 540 820 Z" fill="url(#lawn)"/>
+            <path d="M508 560 C524 548 548 552 556 570 L590 680 C594 700 580 716 562 714 L520 640 Z" fill="#C48C63"/>
+            <g fill="#C48C63" stroke="#8E5E44" stroke-width="1.2"><path d="M512 574 C500 574 490 578 486 584 C484 590 492 594 498 592 C504 590 510 588 516 588 Z"/><path d="M516 600 C504 602 494 606 490 612 C488 618 496 622 502 620 C508 618 514 616 520 614 Z"/></g>
+            <g transform="translate(572 700) rotate(-60)"><ellipse rx="24" ry="8" fill="none" stroke="#C2306E" stroke-width="4"/><ellipse cy="8" rx="24" ry="8" fill="none" stroke="#E7B23C" stroke-width="3.6"/></g>
+          </g>
+          <!-- her glass in front of the kit -->
+          <g id="Tglass" transform="translate(470 520)">
+            <path d="M-40 0 L40 0 L35 120 Q0 128 -35 120 Z" fill="rgba(255,255,255,.25)" stroke="#FFFFFF" stroke-width="2.5"/>
+            <g clip-path="url(#glassClip)"><rect x="-45" y="18" width="90" height="112" fill="url(#dirty)"/><g id="TglassSpecks" fill="#6D4416"></g></g>
+          </g>
+          <!-- meter with probe -->
+          <g id="meter" transform="translate(600 360)" opacity="0">
+            <rect x="0" y="0" width="92" height="170" rx="16" fill="#E8ECEC"/>
+            <rect x="12" y="16" width="68" height="44" rx="6" fill="#B9D6C8"/>
+            <g filter="url(#soft2)" fill="#33463F" opacity=".7"><rect x="20" y="28" width="12" height="20"/><rect x="36" y="28" width="12" height="20"/><rect x="52" y="28" width="12" height="20"/></g>
+            <circle cx="30" cy="96" r="9" fill="#9AA3A8"/><circle cx="62" cy="96" r="9" fill="#9AA3A8"/>
+            <path d="M46 170 C46 210 -80 170 -130 210" stroke="#3B3B3B" stroke-width="5" fill="none"/>
+          </g>
+          <g id="probe" transform="translate(470 420)" opacity="0"><rect x="-6" y="0" width="12" height="150" rx="5" fill="#2E2E2E"/><rect x="-4" y="140" width="8" height="30" rx="3" fill="#BFC6C6"/></g>
+          <!-- plumber: shirt chest with Alfa, ID card -->
+          <g id="plumber" transform="translate(800 0)">
+            <path d="M-260 0 L0 0 L0 470 L-230 470 C-250 380 -270 200 -260 0 Z" fill="#A7B6C2"/>
+            <path d="M-160 0 L-150 200" stroke="#94A4B0" stroke-width="4"/>
+            <text x="-236" y="236" font-family="Outfit, sans-serif" font-weight="600" font-size="24" fill="#22303A">Alfa</text>
+            <path d="M-120 0 L-150 150 L-90 150 Z" fill="none" stroke="#2F3B6B" stroke-width="4"/>
+            <g transform="translate(-160 150)"><rect width="76" height="104" rx="8" fill="#F7F7F2" stroke="#C9CFCC" stroke-width="2"/><rect x="10" y="12" width="56" height="36" rx="4" fill="#D9DDE0"/><text x="38" y="74" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="600" font-size="15" fill="#22303A">Alfa</text></g>
+            <!-- his hand with a pen -->
+            <g id="pen" transform="translate(-300 760)" opacity="0"><path d="M0 0 L40 -40" stroke="#22303A" stroke-width="7" stroke-linecap="round"/><path d="M20 0 C40 10 80 10 110 0 L120 60 L40 60 Z" fill="#B78A63"/></g>
+          </g>
+          <!-- test card with 8 rows -->
+          <g id="card" transform="translate(250 700)" opacity="0">
+            <rect width="300" height="220" rx="8" fill="#FFFFFF" stroke="#D6D0C3" stroke-width="2"/>
+            <rect x="20" y="18" width="120" height="10" rx="3" fill="#C9CFCC"/>
+            <g id="rows" stroke="#D6D0C3" stroke-width="2"></g>
+            <g id="rowMarks" stroke="#2F3B6B" stroke-width="3" stroke-linecap="round" filter="url(#soft2)"></g>
+          </g>
+          <!-- her hands take the card -->
+          <g id="herHands" opacity="0">
+            <path d="M150 1000 C170 930 200 900 240 890 L270 920 C240 940 220 970 220 1000 Z" fill="url(#lawn)"/>
+            <path d="M240 892 C252 880 270 880 280 890 L282 930 C272 936 256 934 246 926 Z" fill="#C48C63"/>
+            <path d="M650 1000 C630 930 600 900 560 890 L530 920 C560 940 580 970 580 1000 Z" fill="url(#lawn)"/>
+            <path d="M560 892 C548 880 530 880 520 890 L518 930 C528 936 544 934 554 926 Z" fill="#C48C63"/>
+            <g transform="translate(232 930) rotate(-30)"><ellipse rx="22" ry="7" fill="none" stroke="#C2306E" stroke-width="4"/><ellipse cy="7" rx="22" ry="7" fill="none" stroke="#E7B23C" stroke-width="3.4"/></g>
+          </g>
+          <!-- the daughter at the counter, looking at the tubes -->
+          <g id="daughter" transform="translate(0 120)" opacity="0">
+            <path d="M0 1000 L0 760 C30 730 90 720 130 740 C160 760 170 820 170 1000 Z" fill="#E58FB3"/>
+            <g fill="#FFFFFF" opacity=".6"><circle cx="40" cy="820" r="3"/><circle cx="90" cy="860" r="3"/><circle cx="130" cy="800" r="3"/><circle cx="60" cy="920" r="3"/><circle cx="120" cy="940" r="3"/></g>
+            <circle cx="88" cy="660" r="62" fill="#C79469"/>
+            <path d="M28 650 C28 600 60 584 92 584 C126 584 150 604 150 640 C134 624 112 618 96 622 C76 626 50 636 28 650 Z" fill="#2A1C16"/>
+            <path d="M28 650 C24 690 30 720 40 740" stroke="#2A1C16" stroke-width="16" fill="none" stroke-linecap="round"/>
+            <circle cx="138" cy="612" r="8" fill="#C2306E"/>
+            <ellipse cx="116" cy="660" rx="6" ry="7" fill="#2A1C16"/><ellipse cx="146" cy="658" rx="5" ry="6" fill="#2A1C16"/>
+            <circle cx="118" cy="657" r="1.8" fill="#FFF"/><circle cx="147" cy="655" r="1.6" fill="#FFF"/>
+            <path d="M126 690 q8 6 16 0" stroke="#7A3F33" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <ellipse cx="102" cy="682" rx="9" ry="5" fill="#E09A86" opacity=".5"/>
+            <g fill="#C79469"><rect x="150" y="700" width="40" height="24" rx="11"/></g>
+          </g>
+          <!-- husband's khaki sleeve and hand resting on the counter -->
+          <g id="husbandHand" opacity="0">
+            <path d="M800 860 L680 880 L680 940 L800 940 Z" fill="url(#khaki)"/>
+            <path d="M682 880 C660 876 640 884 632 898 C630 912 640 924 656 926 L682 932 Z" fill="#A8774F"/>
+          </g>
+        </g></g>
+
+        <!-- ============ SCENE M: the main line in the side yard ============ -->
+        <g id="M" class="sc"><g id="Mcam">
+          <rect width="800" height="1000" fill="url(#wall)"/>
+          <g opacity=".25" stroke="#BFB7A6" stroke-width="2"><path d="M0 220 H800"/><path d="M0 520 H800"/><path d="M0 820 H800"/></g>
+          <rect x="0" y="900" width="800" height="100" fill="url(#stone)"/>
+          <!-- incoming street line from the ground, filter, outgoing pipe -->
+          <path d="M150 1000 L150 400 C150 372 170 358 200 358 L312 358" stroke="#8A918F" stroke-width="26" fill="none"/>
+          <path d="M488 358 L700 358 C730 358 740 338 740 310 L740 0" stroke="#8A918F" stroke-width="26" fill="none"/>
+          <!-- filter housing -->
+          <g id="housing" transform="translate(400 330)">
+            <rect x="-90" y="0" width="180" height="56" rx="10" fill="#6F7A80"/>
+            <g clip-path="url(#bowlClip)" transform="translate(0 56)">
+              <rect id="bowlWater" x="-70" y="0" width="140" height="260" fill="url(#dirty)" opacity="0"/>
+              <g id="bowlSpecks" fill="#6D4416"></g>
+            </g>
+            <!-- cartridge inside the bowl -->
+            <g transform="translate(0 70)">
+              <rect x="-34" y="0" width="68" height="200" rx="10" fill="#FBFAF6"/>
+              <rect id="haze" x="-34" y="0" width="68" height="200" rx="10" fill="#C9874A" opacity="0"/>
+              <g stroke="#DAD5CA" stroke-width="2"><path d="M-22 10 V190"/><path d="M-11 10 V190"/><path d="M0 10 V190"/><path d="M11 10 V190"/><path d="M22 10 V190"/></g>
+            </g>
+            <path d="M-62 56 L62 56 L58 286 Q0 304 -58 286 Z" fill="rgba(255,255,255,.22)" stroke="#F4F6F3" stroke-width="3"/>
+            <path id="bowlShine" d="M-50 70 L-46 270" stroke="#FFFFFF" stroke-width="6" opacity=".6" stroke-linecap="round"/>
+          </g>
+          <!-- the plumber's hand turns the bowl tight -->
+          <g id="Mhand" opacity="0">
+            <path d="M800 520 L620 560 L620 680 L800 700 Z" fill="#A7B6C2"/>
+            <path d="M622 560 C590 552 560 560 540 580 C530 600 534 640 548 660 C566 676 600 680 626 676 Z" fill="#B78A63"/>
+            <g fill="#B78A63" stroke="#8A6448" stroke-width="1.4"><path d="M544 576 C520 570 494 572 476 584 C470 592 476 600 486 598 C502 592 522 592 540 596 Z"/><path d="M542 602 C516 598 490 602 472 614 C466 622 472 630 482 628 C498 622 520 622 540 624 Z"/><path d="M542 628 C518 626 494 632 478 644 C472 652 478 660 488 656 C504 650 522 650 540 652 Z"/><path d="M546 652 C528 652 510 658 498 668 C494 676 500 682 508 678 C520 672 534 672 548 674 Z"/></g><path d="M560 580 C548 560 536 552 526 556 C520 562 528 572 540 584 Z" fill="#B78A63" stroke="#8A6448" stroke-width="1.4"/>
+          </g>
+          <!-- family shadows on the yard floor -->
+          <g id="shadows" opacity="0" fill="#2E2925">
+            <ellipse cx="560" cy="960" rx="90" ry="16" opacity=".25"/>
+            <path d="M440 1000 C452 930 500 900 556 900 C612 900 652 930 664 1000 Z" opacity=".38"/><path d="M380 1000 C386 950 410 930 440 930 C470 930 492 950 498 1000 Z" opacity=".34"/>
+            <path d="M660 1000 C664 966 680 954 700 954 C720 954 734 966 738 1000 Z" opacity=".34"/>
+          </g>
+        </g></g>
+
+        <!-- ============ SCENE Y: the yard tap / wazu corner ============ -->
+        <g id="Y" class="sc"><g id="Ycam">
+          <rect width="800" height="1000" fill="url(#wall)"/>
+          <rect x="0" y="640" width="800" height="360" fill="url(#stone)"/>
+          <g stroke="#968E7E" stroke-width="2" opacity=".6"><path d="M0 760 H800"/><path d="M0 880 H800"/><path d="M200 640 V760"/><path d="M520 640 V760"/><path d="M90 760 V880"/><path d="M380 760 V880"/><path d="M680 760 V880"/></g>
+          <!-- wet patch -->
+          <ellipse id="wet" cx="330" cy="790" rx="150" ry="40" fill="#8E8778" opacity=".45"/>
+          <!-- the low tap -->
+          <g><rect x="300" y="400" width="20" height="80" fill="#8A918F"/><path d="M310 480 C310 520 330 532 340 540" stroke="#C9CFCC" stroke-width="14" fill="none" stroke-linecap="round"/><rect x="330" y="536" width="20" height="12" rx="3" fill="#8A918F"/><g transform="translate(310 470)"><rect x="-16" y="-5" width="32" height="10" rx="4" fill="#D7DCD9"/></g></g>
+          <!-- clear stream (stone seen through) -->
+          <g id="Ystream">
+            <rect x="333" y="548" width="14" height="236" rx="7" fill="url(#crystal)" opacity=".85"/>
+            <rect x="336" y="548" width="3" height="236" fill="#FFFFFF" opacity=".85"/>
+            <path id="YstreamFlow" d="M340 548 L340 784" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6 16" opacity=".9"/>
+          </g>
+          <g id="Ydrip" opacity="0"><circle id="drip1" cx="340" cy="560" r="5" fill="#E6F4F9"/></g>
+          <g id="ripples" fill="none" stroke="#F4FBFF" stroke-width="2.4">
+            <ellipse class="rip" cx="340" cy="790" rx="20" ry="6" stroke="#BFE8FF"/><ellipse class="rip" cx="340" cy="790" rx="20" ry="6" stroke="#BFE8FF"/>
+          </g>
+          <g id="Yleaves" opacity="0"></g>
+        </g></g>
+
+        <!-- ============ SCENE B: at the wash basin, cupped hands of crystal clear water ============ -->
+        <g id="B" class="sc"><g id="Bcam">
+          <rect width="800" height="1000" fill="#EEF0EC"/>
+          <g stroke="#D7DBD5" stroke-width="2"><path d="M0 120 H800 M0 240 H800 M0 360 H800 M0 480 H800 M0 600 H800 M0 720 H800 M0 840 H800 M0 960 H800"/><path d="M100 0 V1000 M220 0 V1000 M340 0 V1000 M460 0 V1000 M580 0 V1000 M700 0 V1000"/></g>
+          <!-- mirror -->
+          <rect x="250" y="80" width="300" height="330" rx="14" fill="#C9D6DA" stroke="#9AA19F" stroke-width="8"/>
+          <path d="M290 110 L360 110 L270 380 L262 380 Z" fill="#FFFFFF" opacity=".35"/>
+          <!-- shelf with soap and toothbrush glass -->
+          <rect x="230" y="430" width="340" height="14" rx="4" fill="#B5BCB9"/>
+          <rect x="270" y="404" width="44" height="26" rx="8" fill="#F2C7C9"/>
+          <g transform="translate(500 380)"><rect x="-18" y="0" width="36" height="50" rx="4" fill="#D9F3FF" opacity=".7" stroke="#FFFFFF" stroke-width="2"/><rect x="-8" y="-30" width="5" height="60" rx="2" fill="#1F8A8A"/><rect x="4" y="-24" width="5" height="54" rx="2" fill="#C2306E"/></g>
+          <!-- basin -->
+          <path d="M180 560 L620 560 C612 650 520 700 400 700 C280 700 188 650 180 560 Z" fill="#FBFBF8" stroke="#C9CFCC" stroke-width="3"/>
+          <ellipse cx="400" cy="560" rx="220" ry="26" fill="#E6EAE8"/>
+          <ellipse cx="400" cy="566" rx="196" ry="18" fill="#D8DEDC"/>
+          <rect x="380" y="700" width="40" height="300" fill="#F3F3EF" stroke="#C9CFCC" stroke-width="2"/>
+          <!-- tap -->
+          <rect x="384" y="488" width="32" height="56" rx="8" fill="url(#steel)"/>
+          <path d="M400 500 C400 470 430 466 440 484 L440 498" stroke="#C9CFCC" stroke-width="12" fill="none" stroke-linecap="round"/>
+          <rect x="394" y="470" width="12" height="20" rx="4" fill="#D7DCD9"/>
+          <!-- crystal stream -->
+          <g id="Bstream"><rect x="434" y="498" width="12" height="70" rx="6" fill="url(#crystal)" opacity=".9"/><rect x="437" y="498" width="3" height="70" fill="#FFFFFF" opacity=".9"/></g>
+          <!-- cupped hands under the tap, filling, then lifting to the face -->
+          <g id="Bhands">
+            <path d="M120 1000 C150 880 230 780 300 724 L352 742 C292 792 240 880 210 1000 Z" fill="url(#khaki)"/>
+            <path d="M680 1000 C650 880 570 780 500 724 L448 742 C508 792 560 880 590 1000 Z" fill="url(#khaki)"/>
+            <!-- left hand, palm up, fingers curled at the outer edge -->
+            <path d="M300 726 C286 700 288 664 306 640 C330 614 380 604 436 606 L438 724 C400 742 340 744 300 726 Z" fill="#A8774F"/>
+            <g fill="#B98863" stroke="#7E5A40" stroke-width="1.4">
+              <path d="M306 640 C292 630 290 614 300 608 C310 604 320 614 324 628 Z"/>
+              <path d="M298 664 C282 658 278 642 288 636 C298 632 308 642 310 656 Z"/>
+              <path d="M294 690 C278 686 274 670 284 664 C294 660 304 670 304 684 Z"/>
+              <path d="M300 714 C286 712 282 698 292 692 C302 688 310 698 308 710 Z"/>
+            </g>
+            <path d="M436 606 C420 590 400 586 386 594 C378 600 384 610 398 612 Z" fill="#B98863" stroke="#7E5A40" stroke-width="1.4"/>
+            <!-- right hand -->
+            <path d="M580 726 C594 700 592 664 574 640 C550 614 500 604 444 606 L442 724 C480 742 540 744 580 726 Z" fill="#A8774F"/>
+            <g fill="#B98863" stroke="#7E5A40" stroke-width="1.4">
+              <path d="M574 640 C588 630 590 614 580 608 C570 604 560 614 556 628 Z"/>
+              <path d="M582 664 C598 658 602 642 592 636 C582 632 572 642 570 656 Z"/>
+              <path d="M586 690 C602 686 606 670 596 664 C586 660 576 670 576 684 Z"/>
+              <path d="M580 714 C594 712 598 698 588 692 C578 688 570 698 572 710 Z"/>
+            </g>
+            <path d="M444 606 C460 590 480 586 494 594 C502 600 496 610 482 612 Z" fill="#B98863" stroke="#7E5A40" stroke-width="1.4"/>
+            <path d="M440 606 L440 726" stroke="#7E5A40" stroke-width="2.4"/>
+            <ellipse id="Bpool" cx="440" cy="650" rx="118" ry="26" fill="url(#crystal)" opacity="0"/>
+            <ellipse cx="404" cy="644" rx="34" ry="5" fill="#FFFFFF" opacity=".7" id="BpoolShine"/>
+          </g>
+          <circle id="Bspill" cx="440" cy="736" r="5" fill="#9ED9F7" opacity="0"/>
+          <g id="Bdrops" fill="#9ED9F7" opacity="0"><circle cx="330" cy="760" r="6"/><circle cx="470" cy="790" r="5"/><circle cx="540" cy="770" r="6"/><circle cx="400" cy="820" r="4"/></g>
+        </g></g>
+
+        <!-- ============ SCENE C: months later, the cartridge opened ============ -->
+        <g id="C" class="sc"><g id="Ccam">
+          <rect width="800" height="1000" fill="url(#stone)"/>
+          <g id="leaves"></g>
+          <path d="M80 420 L720 400 L760 860 L50 880 Z" fill="#F1ECE0"/>
+          <path d="M80 420 L720 400" stroke="#E2DACB" stroke-width="3"/>
+          <!-- used cartridge, true to the family's own: end caps, pleats under a thick rust coat -->
+          <g id="used" transform="translate(150 520)">
+            <rect x="18" y="4" width="464" height="102" rx="14" fill="#F4F1EA"/>
+            <rect x="18" y="4" width="464" height="102" rx="14" fill="url(#rust)" opacity=".96"/>
+            <g id="rustTex">
+              <ellipse cx="90" cy="36" rx="34" ry="10" fill="#D29653" opacity=".7"/><ellipse cx="210" cy="70" rx="46" ry="12" fill="#C07A35" opacity=".7"/>
+              <ellipse cx="330" cy="32" rx="40" ry="9" fill="#D29653" opacity=".65"/><ellipse cx="420" cy="74" rx="36" ry="11" fill="#B26E2C" opacity=".7"/>
+              <path d="M40 22 C140 14 260 30 470 18" stroke="#C47E3A" stroke-width="4" fill="none" opacity=".7"/>
+              <g fill="#9A5F26" opacity=".45"><circle cx="150" cy="52" r="3"/><circle cx="270" cy="44" r="2.5"/><circle cx="380" cy="58" r="3"/></g>
+            </g>
+            <g stroke="#7B4819" stroke-width="4" opacity=".7"><path d="M30 20 H472"/><path d="M30 37 H472"/><path d="M30 54 H472"/><path d="M30 71 H472"/><path d="M30 88 H472"/></g><path d="M40 14 L470 14" stroke="#FFFFFF" stroke-width="5" opacity=".28" stroke-linecap="round"/>
+            <rect x="0" y="-8" width="30" height="126" rx="8" fill="#C9C4B8" stroke="#9E988A" stroke-width="2"/><ellipse cx="15" cy="55" rx="7" ry="20" fill="#8E887B"/>
+            <rect x="470" y="-8" width="30" height="126" rx="8" fill="#C9C4B8" stroke="#9E988A" stroke-width="2"/>
+          </g>
+          <!-- new white cartridge, the same shape -->
+          <g id="fresh" transform="translate(150 690)">
+            <rect x="18" y="4" width="464" height="102" rx="14" fill="#FBFAF6"/>
+            <g stroke="#DAD5CA" stroke-width="2"><path d="M30 18 H470"/><path d="M30 34 H470"/><path d="M30 50 H470"/><path d="M30 66 H470"/><path d="M30 82 H470"/><path d="M30 96 H470"/></g>
+            <rect x="0" y="-8" width="30" height="126" rx="8" fill="#C9C4B8" stroke="#9E988A" stroke-width="2"/><ellipse cx="15" cy="55" rx="7" ry="20" fill="#8E887B"/>
+            <rect x="470" y="-8" width="30" height="126" rx="8" fill="#C9C4B8" stroke="#9E988A" stroke-width="2"/>
+          </g>
+          <!-- his hands turning the used one -->
+          <g id="Chands"><path d="M660 470 C700 470 740 500 760 540 L800 540 L800 640 L700 640 C680 600 660 560 650 520 Z" fill="#B78A63"/><path d="M760 520 L800 500 L800 680 L740 660 Z" fill="#A7B6C2"/></g>
+          <!-- the daughter's hand holding her mother's dupatta, the light shawl -->
+          <g id="Cdup"><path d="M0 0 L260 0 C230 80 160 160 60 220 L0 240 Z" fill="url(#dup)"/><path d="M60 220 L0 240" stroke="#F2C24B" stroke-width="7"/><path d="M200 0 C190 60 150 120 90 170" stroke="#E9DFC9" stroke-width="40" opacity=".55" fill="none"/></g>
+          <g id="CherHand" opacity="0"><path d="M0 330 L120 380 L150 470 L0 470 Z" fill="url(#lawn)"/><path d="M120 380 C150 380 180 400 196 430 C204 446 198 462 182 464 L150 470 Z" fill="#C48C63"/><g fill="#C48C63" stroke="#8E5E44" stroke-width="1.2"><path d="M186 432 C206 436 226 444 238 456 C242 464 234 470 226 466 C214 458 200 452 186 450 Z"/><path d="M184 452 C204 458 222 468 232 480 C236 488 228 494 220 488 C210 478 196 470 182 466 Z"/></g><g transform="translate(130 420) rotate(70)"><ellipse rx="22" ry="7" fill="none" stroke="#C2306E" stroke-width="4"/><ellipse cy="7" rx="22" ry="7" fill="none" stroke="#E7B23C" stroke-width="3.4"/></g></g>
+          <g id="ChusHand" opacity="0"><path d="M800 300 L690 330 L700 400 L800 390 Z" fill="url(#khaki)"/><path d="M692 332 C670 330 650 340 644 356 C642 370 652 382 668 382 L700 398 Z" fill="#A8774F"/></g>
+          <g id="CkidHand"><rect x="130" y="150" width="40" height="28" rx="12" fill="#C79469"/><path d="M150 178 L160 300 L210 300 L190 170 Z" fill="#7D9BB0"/></g>
+        </g></g>
+
+        <!-- ============ SCENE F: the ending, the family in the kitchen ============ -->
+        <g id="F" class="sc"><g id="Fcam">
+          <rect width="800" height="1000" fill="url(#tile)"/>
+          <!-- open door to the yard (upper right): the wazu corner -->
+          <g id="Fdoor">
+            <rect x="470" y="30" width="300" height="560" fill="#F3EFE4"/>
+            <rect x="470" y="440" width="300" height="150" fill="url(#stone)"/>
+            <rect x="566" y="190" width="120" height="140" rx="8" fill="#C9D6DA" stroke="#9AA19F" stroke-width="5"/>
+            <path d="M582 204 L612 204 L574 316 L570 316 Z" fill="#FFFFFF" opacity=".35"/>
+            <path d="M548 372 L704 372 C700 410 668 430 626 430 C584 430 552 410 548 372 Z" fill="#FBFBF8" stroke="#C9CFCC" stroke-width="2"/>
+            <ellipse cx="626" cy="372" rx="78" ry="10" fill="#E2E6E4"/>
+            <rect x="616" y="430" width="20" height="110" fill="#F3F3EF" stroke="#C9CFCC" stroke-width="1.5"/>
+            <rect x="618" y="336" width="16" height="30" rx="5" fill="#C9CFCC"/>
+            <path d="M626 342 C626 330 642 328 646 338 L646 346" stroke="#C9CFCC" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <g id="Fstream"><rect x="642" y="346" width="8" height="30" rx="4" fill="url(#crystal)" opacity=".9"/><rect x="644" y="346" width="2" height="30" fill="#fff" opacity=".9"/></g>
+            <circle id="Fdrip" cx="646" cy="350" r="5" fill="#9ED9F7" opacity="0"/>
+            <ellipse id="Fsplash" cx="646" cy="376" rx="6" ry="2" fill="none" stroke="#BFE8FF" stroke-width="2" opacity="0"/>
+            <rect x="560" y="440" width="40" height="12" rx="3" fill="#F2C7C9"/>
+            <rect x="460" y="20" width="320" height="580" fill="none" stroke="#7A5539" stroke-width="20"/>
+            <path d="M780 30 L800 20 L800 610 L780 600 Z" fill="#8A6A4C"/>
+          </g>
+          <!-- counter along the left, stove, karahi -->
+          <path d="M0 560 L470 560 L470 640 L0 640 Z" fill="#E9E3D6"/>
+          <rect x="0" y="640" width="470" height="360" fill="url(#wood)"/>
+          <rect x="40" y="520" width="200" height="40" rx="6" fill="url(#steelV)"/>
+          <path d="M80 490 L200 490 C196 520 174 532 140 532 C106 532 84 520 80 490 Z" fill="#3E3B38"/>
+          <ellipse cx="140" cy="490" rx="60" ry="10" fill="#7E3A1C"/>
+          <g id="steamF" fill="none" stroke="#FFFFFF" stroke-linecap="round" opacity=".5" stroke-width="7" filter="url(#soft2)">
+            <path class="stm" d="M126 478 q-12 -26 0 -52 t0 -52"/><path class="stm" d="M154 478 q12 -26 0 -52 t0 -52"/>
+          </g>
+          <!-- her at the stove (back three-quarter), stirring -->
+          <g id="Fher">
+            <path d="M214 1000 C208 880 214 770 232 700 C246 650 276 622 318 616 C360 622 392 650 404 700 C420 780 428 880 428 1000 Z" fill="url(#lawn)"/>
+            <path id="Farm" d="M250 650 C226 610 206 572 190 536" stroke="url(#lawn)" stroke-width="30" fill="none" stroke-linecap="round"/>
+            <path d="M190 536 C184 526 180 516 178 508" stroke="#C48C63" stroke-width="15" fill="none" stroke-linecap="round"/>
+            <path id="Fspoon" d="M178 508 L156 482" stroke="#9AA19F" stroke-width="5" stroke-linecap="round"/>
+            <path d="M264 478 C262 430 296 398 334 400 C374 404 398 438 396 486 C396 540 404 590 412 640 C392 660 360 668 330 664 C300 660 276 650 262 636 C258 600 260 540 264 478 Z" fill="url(#dup)"/>
+            <path d="M264 478 C262 430 296 398 334 400 C374 404 398 438 396 486 C394 540 404 600 420 680" fill="none" stroke="#F2C24B" stroke-width="6"/>
+            <path d="M268 474 C262 504 266 530 280 544 C292 554 308 552 316 538 C310 514 308 490 310 466 C300 456 280 458 268 474 Z" fill="#C48C63"/><path d="M276 500 q5 -3 10 0" stroke="#2A1C16" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M272 490 q6 -3 13 -1" stroke="#2A1C16" stroke-width="2" fill="none"/>
+            <path d="M276 522 C281 526 287 526 292 522" stroke="#7A3F33" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          </g>
+          <!-- daughter at the far end of the counter (lower left), smiling at the sizzle, turned to her mother -->
+          <g id="Fdaughter">
+            <path d="M30 1000 C30 900 50 846 98 836 C146 846 166 900 166 1000 Z" fill="#E58FB3"/>
+            <g fill="#FFFFFF" opacity=".6"><circle cx="70" cy="900" r="3"/><circle cx="120" cy="930" r="3"/><circle cx="96" cy="970" r="3"/></g>
+            <circle cx="98" cy="790" r="42" fill="#C79469"/>
+            <path d="M56 784 C56 744 80 730 100 730 C124 730 140 748 140 778 C124 764 110 758 98 760 C84 762 68 772 56 784 Z" fill="#2A1C16"/>
+            <path d="M58 784 C54 812 58 830 66 842" stroke="#2A1C16" stroke-width="12" fill="none" stroke-linecap="round"/>
+            <circle cx="132" cy="756" r="7" fill="#C2306E"/>
+            <ellipse cx="114" cy="792" rx="4" ry="5" fill="#2A1C16"/><ellipse cx="134" cy="790" rx="3.5" ry="4.5" fill="#2A1C16"/>
+            <path d="M112 812 q9 7 18 0" stroke="#7A3F33" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          </g>
+          <!-- husband on the wooden chair by the door (lower right), her shawl on its back -->
+          <g id="Fhusband">
+            <rect x="520" y="600" width="16" height="200" fill="#5A3D29"/><rect x="700" y="600" width="16" height="200" fill="#5A3D29"/>
+            <path d="M520 610 L716 610 L716 650 L520 650 Z" fill="#7A5539"/>
+            <path d="M524 606 C540 660 560 700 586 720 L600 690 C612 720 630 730 650 726 C670 700 690 650 712 606 Z" fill="#A2547E"/><path d="M586 720 l-4 14 M600 724 l-2 14 M614 728 l0 14 M628 728 l2 14 M642 726 l3 14" stroke="#A2547E" stroke-width="2"/>
+            <path d="M540 790 L720 790 L720 820 L540 820 Z" fill="#7A5539"/>
+            <rect x="548" y="820" width="14" height="180" fill="#5A3D29"/><rect x="700" y="820" width="14" height="180" fill="#5A3D29"/>
+            <path d="M560 800 C560 700 590 640 630 630 C680 630 700 700 700 800 Z" fill="url(#khaki)"/>
+            <path d="M560 790 L470 800 L462 980 L500 980 L520 840 L600 820 Z" fill="url(#khaki)"/>
+            <path d="M600 800 L520 812 L510 980 L548 980 L566 850 L640 820 Z" fill="#847D67"/>
+            <ellipse cx="480" cy="986" rx="22" ry="10" fill="#D8D2C4"/><ellipse cx="528" cy="986" rx="22" ry="10" fill="#D8D2C4"/>
+            <circle cx="628" cy="590" r="40" fill="#A8774F"/>
+            <path d="M590 588 C590 552 610 540 630 540 C652 540 670 556 668 584 C654 572 640 566 628 568 C612 570 600 578 590 588 Z" fill="#1E1512"/>
+            <path d="M592 604 C598 624 620 630 640 627 C656 624 664 612 666 600" fill="#5A4436" opacity=".35"/><path d="M601 604 q7 -2 14 0" stroke="#3A2A22" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M601 613 q7 5 14 0" stroke="#7A3F33" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <path d="M598 590 q5 -4 10 0" stroke="#1E1512" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M619 589 q5 -4 10 0" stroke="#1E1512" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M597 576 q6 -4 12 -2 M619 575 q6 -4 12 -1" stroke="#3A2A22" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </g>
+          <!-- the little son on a stool at his father's knee, with a toy -->
+          <g id="Fson" transform="translate(30 0)">
+            <rect x="380" y="900" width="100" height="16" rx="4" fill="#7A5539"/><rect x="390" y="916" width="12" height="84" fill="#5A3D29"/><rect x="458" y="916" width="12" height="84" fill="#5A3D29"/>
+            <path d="M392 900 C392 840 410 812 432 812 C454 812 470 840 470 900 Z" fill="#7D9BB0"/>
+            <circle cx="430" cy="786" r="30" fill="#C79469"/>
+            <path d="M402 782 C402 760 416 750 430 750 C446 750 460 762 458 784 C448 772 438 768 430 770 C418 772 408 776 402 782 Z" fill="#2A1C16"/>
+            <path d="M414 796 q4 -3 8 0" stroke="#2A1C16" stroke-width="2" fill="none"/>
+            <g transform="translate(452 868)"><g id="toy"><rect x="-22" y="-10" width="44" height="18" rx="6" fill="#2F6FB0"/><circle cx="-12" cy="10" r="6" fill="#222"/><circle cx="12" cy="10" r="6" fill="#222"/></g></g>
+          </g>
+          <ellipse cx="150" cy="600" rx="90" ry="20" fill="#FFF6D8" opacity=".85"/>
+          <!-- window light from the left -->
+          <path d="M0 0 L300 0 L520 1000 L0 1000 Z" fill="#FFE9B8" opacity=".10"/>
+        </g></g>
+
+        <!-- grain over everything, for a painted feel -->
+        <rect width="800" height="1000" filter="url(#grain)" opacity=".9" pointer-events="none"/>
+        <!-- vignette -->
+        <radialGradient id="vig" cx=".5" cy=".45" r=".75"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></radialGradient>
+        <rect width="800" height="1000" fill="url(#vig)" pointer-events="none"/>
+        <rect id="fade" width="800" height="1000" fill="#1C1A18" opacity="0" pointer-events="none"/>
+      </g>
+    </svg>
+    <button class="replay" id="replay" type="button" aria-label="Play again"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg></button>
+  </div>
+
+  <div class="copy">
+    <h1 class="name"><span class="alfa">Alfa Water</span><span class="tech">Technologies</span></h1>
+    <span class="rule" aria-hidden="true"></span>
+    <div class="tag" id="tag">
+      <p class="urdu" lang="ur" dir="rtl" id="urdu">پینے کا پانی ہی نہیں، پورے گھر کا پانی</p>
+      <p class="english"><span class="nb">Not just the water you drink.</span> <span class="nb">All of your home's water.</span></p>
+    </div>
+    <div class="soon"><span class="dot" aria-hidden="true"></span><span class="ur" lang="ur">جلد آ رہے ہیں</span><span class="bar" aria-hidden="true"></span><span class="en">Coming soon</span></div>
+  </div>
+</main>
+
+<script src="js/gsap.min.js"></script>
+<script>
+(function(){
+  var NS = 'http://www.w3.org/2000/svg';
+  var $ = function(id){ return document.getElementById(id); };
+  function el(tag, attrs, parent){ var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+  function rnd(a, b){ return a + Math.random() * (b - a); }
+
+  // ---------- build repeated drawing ----------
+  // kitchen window grill
+  (function(){
+    var g = $('Kgrill');
+    for (var x = 80; x <= 360; x += 40) el('line', {x1:x, y1:78, x2:x, y2:414}, g);
+    [200, 320].forEach(function(y){
+      el('line', {x1:48, y1:y, x2:392, y2:y}, g);
+      for (var x = 100; x <= 340; x += 40) el('circle', {cx:x, cy:y, r:11, fill:'none'}, g);
+    });
+  })();
+  // big window grill
+  (function(){
+    var g = $('Wgrill');
+    for (var x = 70; x <= 500; x += 70) el('line', {x1:x, y1:10, x2:x, y2:850}, g);
+    [300, 600].forEach(function(y){
+      el('line', {x1:10, y1:y, x2:550, y2:y}, g);
+      for (var x = 105; x <= 465; x += 70) el('circle', {cx:x, cy:y, r:20, fill:'none'}, g);
+    });
+    var s = $('sillShadow');
+    for (var i = 0; i < 8; i++) el('rect', {x: 40 + i * 70, y: 858, width: 9, height: 36, transform: 'skewX(-30)'}, s);
+  })();
+  // specks in every glass of dirty water
+  function specks(gid, n, x0, x1, y0, y1, rmax){
+    var g = $(gid), out = [];
+    for (var i = 0; i < n; i++) out.push(el('circle', {cx: rnd(x0, x1), cy: rnd(y0, y1), r: rnd(.8, rmax), opacity: rnd(.45, .95)}, g));
+    return out;
+  }
+  var kSp = specks('KglassSpecks', 22, -32, 32, 30, 116, 2.2);
+  var wSp = specks('WglassSpecks', 30, -34, 34, 30, 116, 2.4);
+  var sSp = specks('sillSpecks', 26, -32, 32, 24, 110, 2.2);
+  var tSp = specks('TglassSpecks', 18, -32, 32, 30, 116, 2);
+  var bSp = specks('bowlSpecks', 40, -56, 56, 10, 230, 2.6);
+  var pSp = (function(){ var g = $('patchSpecks'), o = []; for (var i = 0; i < 18; i++) o.push(el('circle', {cx: rnd(595, 695), cy: rnd(648, 666), r: rnd(1.4, 3), opacity: rnd(.5, .9)}, g)); return o; })();
+  // test card rows and marks
+  (function(){
+    var r = $('rows'), m = $('rowMarks');
+    for (var i = 0; i < 8; i++){
+      var y = 50 + i * 21;
+      el('line', {x1: 20, y1: y + 8, x2: 280, y2: y + 8}, r);
+      el('rect', {x: 22, y: y - 2, width: rnd(60, 100), height: 6, rx: 3, fill: '#C9CFCC', stroke: 'none'}, r);
+      var len = rnd(40, 90);
+      el('path', {d: 'M170 ' + (y + 2) + ' q' + (len / 4) + ' -6 ' + (len / 2) + ' 0 t' + (len / 2) + ' 0', fill: 'none', 'stroke-dasharray': 200, 'stroke-dashoffset': 200, class: 'mark'}, m);
+    }
+  })();
+  // dry leaves for the season change
+  (function(){
+    var g = $('leaves'), cols = ['#B88A44', '#9C6B2F', '#C9A55A', '#8A5A2B'];
+    for (var i = 0; i < 30; i++){
+      var x, y, r = Math.random();
+      if (r < .45){ x = rnd(80, 740); y = rnd(170, 400); }
+      else if (r < .8){ x = rnd(80, 740); y = rnd(880, 990); }
+      else { x = rnd(1, 0) < .5 ? rnd(60, 160) : rnd(640, 740); y = rnd(420, 880); }
+      el('path', {d: 'M0 0 C12 -15 33 -15 45 0 C33 15 12 15 0 0 Z M0 0 L45 0', fill: cols[i % 4], stroke: '#6E4A20', 'stroke-width': 1.2, transform: 'translate(' + x + ' ' + y + ') rotate(' + rnd(0, 360) + ')'}, g);
+    }
+  })();
+
+  // ---------- camera: frame any 4:5 rectangle of a scene ----------
+  var cams = {};
+  function camState(id){ if (!cams[id]) cams[id] = {x: 0, y: 0, w: 800}; return cams[id]; }
+  function applyCam(id){ var s = camState(id), k = 800 / s.w; $(id).setAttribute('transform', 'translate(' + (-s.x * k) + ' ' + (-s.y * k) + ') scale(' + k + ')'); }
+  function cam(tl, id, r, t, dur, ease){
+    var s = camState(id);
+    r = [Math.max(0, Math.min(r[0], 800 - r[2])), Math.max(0, Math.min(r[1], 1000 - r[2] * 1.25)), r[2]];
+    tl.to(s, {x: r[0], y: r[1], w: r[2], duration: dur || .001, ease: ease || 'power1.inOut', onUpdate: function(){ applyCam(id); }}, t);
+  }
+
+  // ---------- always-on life: steam, ripples, flowing water, specks ----------
+  var ambient = [];
+  function always(){
+    ambient.forEach(function(a){ a.kill(); }); ambient = [];
+    gsap.utils.toArray('.stm').forEach(function(p, i){
+      ambient.push(gsap.fromTo(p, {y: 0, opacity: .7}, {y: -60, opacity: 0, duration: 3 + i * .4, repeat: -1, ease: 'none', delay: i * .6}));
+    });
+    gsap.utils.toArray('.rip').forEach(function(r, i){
+      ambient.push(gsap.fromTo(r, {attr: {rx: 10, ry: 3}, opacity: .9}, {attr: {rx: 60, ry: 14}, opacity: 0, duration: 1.4, repeat: -1, delay: i * .7, ease: 'power1.out'}));
+    });
+    ambient.push(gsap.to('#YstreamFlow', {attr: {'stroke-dashoffset': -44}, duration: .5, repeat: -1, ease: 'none'}));
+    [kSp, wSp, tSp, bSp].forEach(function(arr){
+      arr.forEach(function(c){
+        ambient.push(gsap.to(c, {attr: {cx: '+=' + rnd(-6, 6), cy: '+=' + rnd(-10, 10)}, duration: rnd(2, 4), repeat: -1, yoyo: true, ease: 'sine.inOut'}));
+      });
+    });
+    pSp.forEach(function(c){ ambient.push(gsap.to(c, {attr: {cx: '+=' + rnd(-5, 5), cy: '+=' + rnd(-3, 3)}, duration: rnd(1.5, 3), repeat: -1, yoyo: true, ease: 'sine.inOut'})); });
+    ambient.push(gsap.to('#caustic', {x: 12, duration: 1.2, repeat: -1, yoyo: true, ease: 'sine.inOut'}));
+    ambient.push(gsap.to('#flame', {scaleY: .9, transformOrigin: '50% 100%', duration: .25, repeat: -1, yoyo: true}));
+  }
+
+  // ---------- the film ----------
+  var tl, endLoops = [];
+  var tag = $('tag'), u = $('urdu');
+  var words = u.textContent.trim().split(/\s+/); u.textContent = '';
+  var spans = words.map(function(w, i){
+    var s = document.createElement('span'); s.className = 'w' + (/^(پورے|گھر)$/.test(w) ? ' key' : ''); s.textContent = w;
+    s.style.transitionDelay = (i * .22) + 's'; u.appendChild(s); if (i < words.length - 1) u.appendChild(document.createTextNode(' ')); return s;
+  });
+  document.querySelector('.english').style.transitionDelay = (words.length * .22 + .3) + 's';
+
+  function show(tl, id, t){ tl.set('.sc', {autoAlpha: 0}, t); tl.set('#' + id, {autoAlpha: 1}, t); }
+  var brow = {relax: 'M502 344 C510 339 522 338 534 341', worry: 'M502 348 C510 340 522 337 534 337', calm: 'M502 345 C510 340 522 339 534 342'};
+  var mouth = {flat: 'M484 434 C488 435 492 434 496 433', smile: 'M483 433 C488 437 493 436 498 431'};
+
+  function build(){
+    if (tl) tl.kill(); endLoops.forEach(function(a){ a.kill(); }); endLoops = [];
+    tag.classList.remove('on'); $('replay').classList.remove('on');
+    tl = gsap.timeline();
+
+    // 0: the kitchen, an ordinary afternoon
+    show(tl, 'K', 0);
+    tl.fromTo('#fade', {opacity: 1}, {opacity: 0, duration: 1}, 0);
+    cam(tl, 'Kcam', [0, 0, 800], 0);
+    cam(tl, 'Kcam', [30, 40, 740], 0, 1.8, 'power1.out');
+
+    // 1.8: she fills a glass at the nal
+    cam(tl, 'Kcam', [96, 400, 330], 1.8);
+    tl.set('#Kglass', {opacity: 1, attr: {transform: 'translate(226 548)'}}, 1.8);
+    tl.set('#KwaterD', {attr: {y: 120, height: 0}}, 1.8);
+    tl.set('#KglassSpecks', {opacity: 0}, 1.8);
+    tl.to('#nalKnob', {rotation: 80, transformOrigin: '50% 50%', duration: .5}, 2.0);
+    tl.to('#Kstream', {attr: {height: 30}, duration: .25}, 2.3);
+    tl.to('#KwaterD', {attr: {y: 22, height: 100}, duration: 1.4, ease: 'none'}, 2.4);
+    tl.to('#KglassSpecks', {opacity: 1, duration: 1.2}, 2.6);
+    tl.to('#Kstream', {attr: {height: 0}, duration: .2}, 3.8);
+
+    // 4.0: over the karahi; the glass tilts, the light through it lands dull on the counter
+    cam(tl, 'Kcam', [360, 330, 420], 4.0);
+    tl.set('#Kglass', {attr: {transform: 'translate(586 366) rotate(-6)'}}, 4.0);
+    tl.to('#Kglass', {attr: {transform: 'translate(590 370) rotate(-24)'}, duration: 1.5, ease: 'power2.out'}, 4.0);
+    tl.to('#patch', {opacity: 1, duration: 1.2}, 4.2);
+    // 5.5: her hand stops; the bangles settle a moment later; the steam goes on
+    tl.to('#Kbangles', {rotation: 46, transformOrigin: '50% 50%', duration: .25, ease: 'power1.out'}, 5.5);
+    tl.to('#Kbangles', {rotation: 40, duration: .5, ease: 'elastic.out(1, .4)'}, 5.75);
+    cam(tl, 'Kcam', [380, 350, 380], 5.5, 1, 'power1.inOut');
+
+    // 6.5: her face; her eyes drop, her brows draw in
+    show(tl, 'W', 6.5);
+    tl.set(['#Wglass', '#Whand', '#Wsill'], {opacity: 0}, 6.5);
+    tl.set('#brow', {attr: {d: brow.relax}}, 6.5);
+    tl.set('#mouth', {attr: {d: mouth.flat}}, 6.5);
+    cam(tl, 'Wcam', [400, 240, 330], 6.5);
+    cam(tl, 'Wcam', [410, 250, 300], 6.5, 1.5, 'power1.out');
+    tl.to('#eye', {y: 2, duration: .6}, 6.8);
+    tl.to('#brow', {attr: {d: brow.worry}, duration: .7, ease: 'power2.out'}, 6.9);
+
+    // 8.0: she lifts the glass to the window
+    cam(tl, 'Wcam', [100, 120, 600], 8.0);
+    tl.to(['#Wglass', '#Whand'], {opacity: 1, duration: .35}, 8.0);
+    tl.fromTo('#Wglass', {attr: {transform: 'translate(300 340) scale(1.6)'}}, {attr: {transform: 'translate(300 300) scale(1.6)'}, duration: 1.2, ease: 'power2.out'}, 8.0);
+    tl.fromTo('#Whand', {y: 40}, {y: 0, duration: 1.2, ease: 'power2.out'}, 8.0);
+    cam(tl, 'Wcam', [150, 170, 520], 8.2, 1.8, 'power1.inOut');
+
+    // 10.0: she turns the flame down
+    show(tl, 'K', 10.0);
+    tl.set('#Kglass', {opacity: 0}, 10.0);
+    cam(tl, 'Kcam', [620, 470, 200], 10.0);
+    tl.to('#knob2', {rotation: -70, transformOrigin: '50% 50%', duration: .6}, 10.2);
+    tl.to('#flame', {scale: .55, transformOrigin: '50% 100%', duration: .6}, 10.3);
+
+    // 11.0: the glass on the sill; her fingers let go
+    show(tl, 'W', 11.0);
+    tl.set(['#Wglass', '#Whand'], {opacity: 0}, 11.0);
+    tl.set('#Wsill', {opacity: 1}, 11.0);
+    tl.set('#sillFingers', {x: 0, opacity: 1}, 11.0);
+    cam(tl, 'Wcam', [130, 560, 440], 11.0);
+    tl.to('#sillFingers', {x: 160, opacity: 0, duration: .8, ease: 'power1.in'}, 11.4);
+    // 12.0: time passes; the grill shadow moves, the specks settle into a line
+    tl.to('#sillShadow', {x: 70, duration: 1, ease: 'none'}, 12.0);
+    tl.to(sSp, {attr: {cy: function(){ return rnd(108, 118); }}, duration: .9, ease: 'power2.in'}, 12.0);
+    tl.to('#sillSettle', {opacity: .85, duration: .9}, 12.1);
+
+    // 13.0: the test on her counter
+    show(tl, 'T', 13.0);
+    cam(tl, 'Tcam', [20, 225, 620], 13.0);
+    tl.fromTo('#kitLid', {scaleY: 0, transformOrigin: '50% 100%'}, {scaleY: 1, duration: .6, ease: 'back.out(1.4)'}, 13.1);
+    tl.fromTo('#Tglass', {attr: {transform: 'translate(470 460)'}, opacity: 0}, {attr: {transform: 'translate(470 520)'}, opacity: 1, duration: .7, ease: 'power2.out'}, 13.5);
+    tl.fromTo('#Thand', {y: -60, opacity: 0}, {y: 0, opacity: 1, duration: .7, ease: 'power2.out'}, 13.5);
+    tl.to('#Thand', {x: 120, y: 80, opacity: 0, duration: .7, ease: 'power1.in'}, 14.3);
+    // 15.0: the meter probe in her glass
+    tl.to('#meter', {opacity: 1, duration: .4}, 14.9);
+    tl.fromTo('#probe', {y: -120, opacity: 0}, {y: 0, opacity: 1, duration: .7, ease: 'power2.out'}, 15.0);
+    cam(tl, 'Tcam', [260, 260, 600], 15.0, 1, 'power1.inOut');
+    // 16.0: the drop tubes, soft and already changed
+    cam(tl, 'Tcam', [30, 330, 330], 16.0);
+    tl.set('#dropper', {opacity: 1}, 16.0);
+    tl.fromTo('#drop', {attr: {cy: 12}, opacity: 1}, {attr: {cy: 70}, opacity: 0, duration: .6, ease: 'power1.in'}, 16.3);
+    // 17.5: the family at the counter
+    cam(tl, 'Tcam', [0, 200, 800], 17.5);
+    tl.set('#dropper', {opacity: 0}, 17.5);
+    tl.to('#daughter', {opacity: 1, attr: {transform: 'translate(0 0)'}, duration: .6, ease: 'power2.out'}, 17.5);
+    tl.to('#husbandHand', {opacity: 1, duration: .5}, 17.6);
+    // 18.5: the card, 8 rows filled
+    cam(tl, 'Tcam', [190, 560, 420], 18.5);
+    tl.set('#card', {opacity: 1}, 18.5);
+    tl.to('#pen', {opacity: 1, duration: .2}, 18.5);
+    tl.to('#rowMarks .mark', {attr: {'stroke-dashoffset': 0}, duration: .18, stagger: .17, ease: 'none'}, 18.6);
+    tl.to('#pen', {y: 160, duration: 1.4, ease: 'none'}, 18.6);
+    // 20.0: the card in her hands
+    tl.to('#pen', {opacity: 0, duration: .2}, 20.0);
+    cam(tl, 'Tcam', [110, 560, 580], 20.0, .8, 'power1.inOut');
+    tl.to('#herHands', {opacity: 1, duration: .4}, 20.1);
+    tl.to('#card', {y: -20, duration: .8, ease: 'power1.out'}, 20.2);
+    // 21.0: she decides; a small nod
+    show(tl, 'W', 21.0);
+    tl.set(['#Wglass', '#Whand', '#Wsill'], {opacity: 0}, 21.0);
+    tl.set('#brow', {attr: {d: brow.calm}}, 21.0);
+    tl.set('#eye', {y: 0}, 21.0);
+    cam(tl, 'Wcam', [400, 240, 330], 21.0);
+    tl.to('#her', {rotation: 4, transformOrigin: '560px 640px', duration: .35, ease: 'power1.inOut', yoyo: true, repeat: 1}, 21.2);
+
+    // 22.0: the main line; the filter is fitted onto the line by hand
+    show(tl, 'M', 22.0);
+    tl.set(['#bowlWater', '#haze', '#shadows', '#Mhand'], {opacity: 0}, 22.0);
+    cam(tl, 'Mcam', [60, 200, 640], 22.0);
+    tl.fromTo('#housing', {attr: {transform: 'translate(400 -150)'}}, {attr: {transform: 'translate(400 330)'}, duration: .9, ease: 'bounce.out'}, 22.0);
+    cam(tl, 'Mcam', [200, 280, 420], 23.0, .6);
+    tl.to('#Mhand', {opacity: 1, duration: .3}, 23.1);
+    tl.fromTo('#bowlShine', {x: 0}, {x: 70, duration: .35, yoyo: true, repeat: 3, ease: 'sine.inOut'}, 23.3);
+    tl.to('#Mhand', {x: 80, opacity: 0, duration: .4}, 24.2);
+    // 24.5: the water comes in; the first rust gathers on the cartridge
+    cam(tl, 'Mcam', [230, 300, 340], 24.5);
+    tl.to('#bowlWater', {opacity: 1, duration: .6}, 24.6);
+    tl.to('#haze', {opacity: .2, duration: 1.4}, 24.9);
+    // 26.0: the tap downstream runs clear
+    show(tl, 'Y', 26.0);
+    tl.set('#Ystream', {opacity: 1}, 26.0);
+    tl.set('#Ydrip', {opacity: 0}, 26.0);
+    cam(tl, 'Ycam', [190, 470, 300], 26.0);
+    cam(tl, 'Ycam', [130, 400, 420], 26.0, 2.8);
+
+    // 29.0: 2 to 3 months later; the cartridge opened in front of them
+    tl.to('#fade', {opacity: 1, duration: .4}, 28.8);
+    show(tl, 'C', 29.2);
+    tl.to('#fade', {opacity: 0, duration: .6}, 29.2);
+    cam(tl, 'Ccam', [0, 0, 800], 29.2);
+    cam(tl, 'Ccam', [60, 140, 680], 29.2, 2.8, 'power1.inOut');
+    tl.fromTo('#leaves path', {y: -30, opacity: 0}, {y: 0, opacity: 1, duration: 1.4, stagger: .02, ease: 'power1.out'}, 29.2);
+    tl.fromTo('#rustTex', {y: -6}, {y: 6, duration: 1.1, ease: 'power1.inOut'}, 30.6);
+    tl.to('#Chands', {y: 12, duration: .5, yoyo: true, repeat: 1}, 30.6);
+    tl.fromTo('#CherHand', {x: -60, opacity: 0}, {x: 0, opacity: 1, duration: .8, ease: 'power2.out'}, 31.8);
+    tl.to('#CherHand', {y: 150, duration: .9, ease: 'sine.inOut'}, 32.8);
+    tl.fromTo('#ChusHand', {x: 60, opacity: 0}, {x: 0, opacity: 1, duration: .8, ease: 'power2.out'}, 33.0);
+    cam(tl, 'Ccam', [0, 60, 800], 33.4, 1.2);
+    tl.fromTo('#CkidHand', {x: -10}, {x: 6, duration: .8, ease: 'sine.inOut', yoyo: true, repeat: 1}, 33.6);
+
+    // 35.0: at the wash basin; cupped hands fill with crystal clear water and lift to the face
+    show(tl, 'B', 35.0);
+    tl.set('#Bpool', {opacity: 0}, 35.0);
+    tl.set('#Bhands', {y: 0}, 35.0);
+    tl.set('#Bdrops', {opacity: 0, y: 0}, 35.0);
+    cam(tl, 'Bcam', [100, 300, 600], 35.0);
+    tl.to('#Bpool', {opacity: .95, duration: .8}, 35.1);
+    tl.to('#Bhands', {y: -260, duration: .9, ease: 'power2.in'}, 36.1);
+    tl.fromTo('#Bspill', {attr: {cy: 736}, opacity: 1}, {attr: {cy: 900}, opacity: 0, duration: .5, repeat: 2, ease: 'power1.in'}, 35.3);
+    tl.to('#Bdrops', {opacity: 1, duration: .2}, 36.5);
+    tl.to('#Bdrops', {y: 160, opacity: 0, duration: .7, ease: 'power1.in'}, 36.6);
+
+    // 37.0: the same glass fills, clear
+    show(tl, 'K', 37.0);
+    tl.set('#patch', {opacity: 0}, 37.0);
+    tl.set('#flame', {scale: 1}, 37.0);
+    tl.set('#knob2', {rotation: 0}, 37.0);
+    cam(tl, 'Kcam', [96, 400, 330], 37.0);
+    tl.set('#Kglass', {opacity: 1, attr: {transform: 'translate(226 548)'}}, 37.0);
+    tl.set('#KwaterD', {opacity: 0}, 37.0);
+    tl.set('#KglassSpecks', {opacity: 0}, 37.0);
+    tl.set('#KwaterC', {opacity: 1, attr: {y: 120, height: 0}}, 37.0);
+    tl.set('#Kstream', {attr: {fill: '#8ED2F5', height: 30}, opacity: .95}, 37.0);
+    tl.to('#KwaterC', {attr: {y: 22, height: 100}, duration: .9, ease: 'none'}, 37.05);
+    tl.to('#Kstream', {attr: {height: 0}, duration: .15}, 37.9);
+
+    // 38.0: to the window again; now the grill shows sharp through it
+    show(tl, 'W', 38.0);
+    tl.set('#Wsill', {opacity: 0}, 38.0);
+    tl.set(['#Wglass', '#Whand'], {opacity: 1}, 38.0);
+    tl.set('#WwaterD', {opacity: 0}, 38.0);
+    tl.set('#WglassSpecks', {opacity: 0}, 38.0);
+    tl.set('#WwaterC', {opacity: 1}, 38.0);
+    tl.set('#WthroughSharp', {opacity: 1}, 38.0);
+    tl.set('#WthroughBlur', {opacity: 0}, 38.0);
+    tl.set('#Wshine', {opacity: .9}, 38.0);
+    tl.set('#brow', {attr: {d: brow.calm}}, 38.0);
+    cam(tl, 'Wcam', [150, 170, 520], 38.0);
+    cam(tl, 'Wcam', [170, 190, 480], 38.0, 1);
+    // 39.0: over the karahi; the patch on the counter is bright
+    show(tl, 'K', 39.0);
+    cam(tl, 'Kcam', [380, 350, 380], 39.0);
+    tl.set('#Kglass', {attr: {transform: 'translate(590 370) rotate(-24)'}}, 39.0);
+    tl.to('#patchBright', {opacity: 1, duration: .6}, 39.1);
+    // 40.0: her small smile, to herself
+    show(tl, 'W', 40.0);
+    tl.set(['#Wglass', '#Whand'], {opacity: 0}, 40.0);
+    cam(tl, 'Wcam', [410, 250, 300], 40.0);
+    tl.to('#mouth', {attr: {d: mouth.smile}, duration: .6}, 40.2);
+    tl.to('#brow', {attr: {d: brow.relax}, duration: .6}, 40.2);
+    // 41.0: she pours; the masala sizzles
+    show(tl, 'K', 41.0);
+    cam(tl, 'Kcam', [400, 290, 400], 41.0);
+    tl.to('#Kglass', {attr: {transform: 'translate(632 452) rotate(-118)'}, duration: .5, ease: 'power2.out'}, 41.0);
+    tl.to(['#Kpour', '#Kpour2'], {opacity: .95, duration: .15}, 41.4);
+    tl.fromTo('#splashK', {opacity: 0, y: 0}, {opacity: 1, y: -10, duration: .3, repeat: 3, yoyo: true}, 41.5);
+    tl.to('#steamK', {opacity: .9, duration: .3}, 41.3);
+    tl.to(['#Kpour', '#Kpour2'], {opacity: 0, duration: .25}, 42.25);
+
+    // 42.0: the family in the kitchen; the wazu tap through the door
+    tl.to('#fade', {opacity: 1, duration: .3}, 42.3);
+    show(tl, 'F', 42.6);
+    tl.to('#fade', {opacity: 0, duration: .6}, 42.6);
+    tl.set('#Fstream', {opacity: 1}, 42.6);
+    cam(tl, 'Fcam', [160, 300, 480], 42.6);
+    cam(tl, 'Fcam', [60, 100, 720], 42.8, 3.0, 'power2.inOut');
+    tl.to('#Fstream', {opacity: 0, duration: .8}, 45.2);
+    // 46.0: the tagline
+    tl.call(function(){
+      tag.classList.add('on');
+      ambient.forEach(function(a){ a.kill(); }); ambient = [];
+      gsap.utils.toArray('#steamF .stm').forEach(function(p, i){ endLoops.push(gsap.fromTo(p, {y: 0, opacity: .7}, {y: -60, opacity: 0, duration: 3.2, repeat: -1, ease: 'none', delay: i * .8})); });
+      endLoops.push(gsap.fromTo('#Fdrip', {attr: {cy: 350}, opacity: 1}, {attr: {cy: 374}, opacity: .6, duration: .45, repeat: -1, repeatDelay: 1.1, ease: 'power2.in'}));
+      endLoops.push(gsap.fromTo('#Fsplash', {attr: {rx: 4, ry: 1.5}, opacity: 0}, {keyframes: [{attr: {rx: 6, ry: 2}, opacity: .9, duration: .05}, {attr: {rx: 22, ry: 5}, opacity: 0, duration: .9}], repeat: -1, repeatDelay: .6, delay: .45}));
+      endLoops.push(gsap.to('#toy', {x: 6, rotation: 6, transformOrigin: '50% 50%', duration: 1.4, repeat: -1, yoyo: true, ease: 'sine.inOut'}));
+      endLoops.push(gsap.to('#Fspoon', {rotation: 12, transformOrigin: '50% 100%', duration: 1.1, repeat: -1, yoyo: true, ease: 'sine.inOut'}));
+      endLoops.push(gsap.to('#Fdaughter', {y: -3, duration: 1.6, repeat: -1, yoyo: true, ease: 'sine.inOut'}));
+      $('replay').classList.add('on');
+    }, null, 46.0);
+  }
+
+  function start(){ always(); build(); }
+  $('replay').addEventListener('click', function(){
+    endLoops.forEach(function(x){ x.kill(); }); endLoops = [];
+    tag.classList.remove('on'); $('replay').classList.remove('on');
+    always(); tl.restart();
+  });
+  start();
+})();
+
+</script>
+</body>
+</html>
