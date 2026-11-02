@@ -7,17 +7,19 @@
 
 :root{
   color-scheme:light;
-  --page:#F1EEE7;      /* chuna */
-  --paper:#FBFAF7;
-  --ink:#22303A;
-  --soft:#56636C;
-  --line:#D6D0C3;
-  --key:#7E2E57;       /* phalsa, for the key words and the coming soon dot */
-  --water:#5FB8EA;     /* clean water is crystal blue */
+  --page:#FFF3D6;      /* warm light, changes with the scroll */
+  --paper:#FFFBF1;
+  --ink:#12304D;
+  --soft:#34506A;
+  --line:#E2C79A;
+  --key:#A3235F;       /* phalsa, for the key words and the coming soon dot */
+  --water:#1593E8;     /* clean water is crystal blue */
+  --water-dk:#0A6FB8;
   --water-lt:#BFE6FA;
   --rust:#B5652A;      /* rust belongs to the dirt only */
-  --sun:#FFF1C9;
-  --pipe:#A5AEB3;
+  --sun:#FFE08A;
+  --pipe:#C98A52;      /* copper pipe */
+  --sand:#EBCB9C;
   --gutter:max(16px,env(safe-area-inset-left,0px));
   --gutter-r:max(16px,env(safe-area-inset-right,0px));
 }
@@ -27,8 +29,8 @@ body{background:var(--page);color:var(--ink);font-family:"Outfit",system-ui,sans
 a{color:inherit}
 
 /* the name, fixed top left */
-.mark{position:fixed;z-index:5;left:var(--gutter);top:calc(14px + env(safe-area-inset-top,0px));font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(17px,1.6vw,22px);line-height:1;color:var(--ink);letter-spacing:-.2px;transition:opacity .5s}
-.mark small{display:block;margin-top:.45em;font-family:"Outfit",system-ui,sans-serif;font-weight:600;font-size:.5em;letter-spacing:.42em;color:var(--soft)}
+.mark{mix-blend-mode:difference;font-weight:600;position:fixed;z-index:5;left:var(--gutter);top:calc(14px + env(safe-area-inset-top,0px));font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(17px,1.6vw,22px);line-height:1;color:#fff;letter-spacing:-.2px;transition:opacity .5s}
+.mark small{display:block;margin-top:.45em;font-family:"Outfit",system-ui,sans-serif;font-weight:600;font-size:.5em;letter-spacing:.42em;color:inherit;opacity:.85}
 .mark.off{opacity:0;pointer-events:none}
 
 /* the scene stays, the words scroll over it */
@@ -37,11 +39,12 @@ a{color:inherit}
 .stage svg{position:absolute;left:0;top:0;width:58%;height:100%;display:block;overflow:visible}
 .panel{position:relative;z-index:1;min-height:100svh;display:flex;align-items:center;justify-content:flex-end;padding:0 var(--gutter-r) 0 var(--gutter)}
 .copy{width:min(38%,520px);text-align:right}
-.ur{font-family:"Nastaliq","Noto Nastaliq Urdu",serif;font-weight:600;direction:rtl;color:var(--ink);line-height:2.25;font-size:clamp(21px,2.5vw,34px)}
+.ur{font-family:"Nastaliq","Noto Nastaliq Urdu",serif;font-weight:600;-webkit-text-stroke:.7px currentColor;direction:rtl;color:var(--ink);line-height:2.25;font-size:clamp(22px,2.7vw,38px)}
 .ur .k{color:var(--key)}
-.ur.tag{white-space:nowrap;display:block;font-size:clamp(20px,2.7vw,38px)}
+.ur .w2{color:var(--water-dk)}
+.ur.tag{white-space:nowrap;display:block;font-size:clamp(24px,3.5vw,54px);-webkit-text-stroke:1px currentColor}
 .ur.small{font-size:clamp(15px,1.5vw,20px);line-height:2.1;color:var(--soft)}
-.en{display:block;margin-top:10px;direction:ltr;font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(14px,1.35vw,18px);line-height:1.5;color:var(--soft)}
+.en{display:block;margin-top:10px;direction:ltr;font-family:"Outfit",system-ui,sans-serif;font-style:normal;font-weight:600;font-size:clamp(15px,1.5vw,20px);line-height:1.45;color:var(--soft)}
 .stack>*+*{margin-top:18px}
 
 .pill{display:inline-flex;align-items:center;gap:14px;padding:10px 22px 10px 18px;border-radius:999px;border:1.5px solid var(--line);background:rgba(255,255,255,.55)}
@@ -55,7 +58,14 @@ a{color:inherit}
 
 .endname{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(40px,6vw,84px);line-height:1;letter-spacing:-.5px}
 .endname small{display:block;margin-top:10px;font-family:"Outfit",system-ui,sans-serif;font-weight:600;font-size:clamp(11px,1vw,14px);letter-spacing:.42em;color:var(--soft);padding-left:.42em}
-.panel.end{justify-content:center;text-align:center;background:var(--page);z-index:2}
+.panel.end{justify-content:center;text-align:center;background:#0E2A47;color:#fff;z-index:2}
+.panel.end .endname{color:#fff}
+.panel.end .endname small{color:#9CC4E6}
+.panel.end .pill{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3)}
+.panel.end .pill .u,.panel.end .pill .e{color:#fff}
+.panel.end .pill .bar{background:rgba(255,255,255,.3)}
+.panel.end .pill .dot{background:#FF8DBD}
+.panel.end .pill .dot::after{border-color:#FF8DBD}
 .panel.end .copy{width:min(92%,760px);text-align:center;display:flex;flex-direction:column;align-items:center;gap:clamp(18px,3vw,32px)}
 
 /* scene drawing helpers */
@@ -67,10 +77,10 @@ a{color:inherit}
 .lbl{font-family:"Nastaliq","Noto Nastaliq Urdu",serif;font-weight:600;fill:var(--ink);font-size:30px;direction:rtl}
 .lbl.en{font-family:"Outfit",system-ui,sans-serif;font-weight:600;font-style:normal;font-size:12px;letter-spacing:.14em;fill:var(--soft);margin:0;display:inline;line-height:1}
 
-@media (max-width:860px){
+@media (max-width:860px) and (min-height:501px){
   .stage svg{width:100%;height:60%;top:calc(34px + env(safe-area-inset-top,0px))}
   .panel{align-items:flex-end;justify-content:center;padding-bottom:calc(5svh + env(safe-area-inset-bottom,0px))}
-  .copy{width:100%;text-align:center;padding:34px 0 0;background:linear-gradient(to top,var(--page) 74%,rgba(241,238,231,0))}
+  .copy{width:100%;text-align:center;padding:34px 0 0;background:linear-gradient(to top,var(--page) 88%,transparent)}
   .en{text-align:center}
   .ur{font-size:clamp(20px,5.6vw,28px)}
   .ur.tag{font-size:clamp(18px,5vw,24px)}
@@ -81,7 +91,7 @@ a{color:inherit}
   .pill .u{font-size:18px}
   .pill .e{font-size:12px;letter-spacing:.16em}
 }
-@media (max-width:860px) and (max-height:700px){
+@media (max-width:860px) and (min-height:501px) and (max-height:700px){
   .stage svg{height:42%}
   .copy{padding-top:16px}
   .ur{font-size:clamp(17px,4.6vw,22px);line-height:2.1}

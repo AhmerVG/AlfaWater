@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alfa Water Systems | Coming soon</title>
+<meta name="description" content="پینے کا پانی ہی نہیں، پورے گھر کا پانی۔ Not just the water you drink. All of your home's water. Coming soon.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alfa Water Systems | Coming soon">
+<meta property="og:description" content="پینے کا پانی ہی نہیں، پورے گھر کا پانی۔ Not just the water you drink. All of your home's water.">
+<meta property="og:url" content="https://www.alfawater.pk/journey/">
+<meta property="og:image" content="https://www.alfawater.pk/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.alfawater.pk/journey/">
+<meta name="theme-color" content="#F1EEE7">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../fonts/nastaliq-600.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="../css/base.css">
+<style>
+/* Root page: the glass to the light. Scene layers: #win (window, glass, chai, karahi) then #main (our line, the filter, the homes around). */
+html.js #main{opacity:0}
+.spark{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-dasharray:6 22;opacity:.65;animation:run 1.2s linear infinite}
+@keyframes run{to{stroke-dashoffset:-28}}
+.cue{display:block;margin-top:22px;font-size:22px;color:var(--soft);animation:nudge 2.4s ease-in-out infinite;text-align:right}
+@keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+.ur.story{font-size:clamp(18px,1.95vw,26px);line-height:2.2}
+.node{fill:var(--page);stroke:var(--ink);stroke-width:2.5}
+.nodeIn{fill:var(--water)}
+@media (max-width:860px) and (min-height:501px){ .cue{text-align:center} }
+:root{--pipe:#A5AEB3}
+</style>
+</head>
+<body>
+<div class="mark" id="mark">Alfa Water<small>SYSTEMS</small></div>
+
+<div class="track" id="track">
+  <div class="stage" aria-hidden="true">
+    <svg id="scene" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A glass of tap water on a window sill, held up to the light. The water goes on to the chai and the sabzi. A line coming into a home turns rust, a filter on it makes it run clear, and the clear line carries on into the home.">
+      <defs>
+        <radialGradient id="g" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF4D0" stop-opacity=".95"/><stop offset="1" stop-color="#FFF4D0" stop-opacity="0"/></radialGradient>
+        <clipPath id="glassClip"><path d="M-45 0 L45 0 L39 130 Q0 140 -39 130 Z"/></clipPath>
+      </defs>
+
+      <g id="win">
+        <circle id="glow" cx="205" cy="380" r="210" fill="url(#g)"/>
+        <rect x="40" y="140" width="330" height="480" fill="var(--sun)" class="out"/>
+        <g class="out" style="stroke-width:2">
+          <path d="M95 140V620M150 140V620M205 140V620M260 140V620M315 140V620"/>
+          <path d="M40 300H370M40 460H370"/>
+          <circle cx="122" cy="300" r="11"/><circle cx="177" cy="300" r="11"/><circle cx="232" cy="300" r="11"/><circle cx="287" cy="300" r="11"/><circle cx="342" cy="300" r="11"/>
+          <circle cx="122" cy="460" r="11"/><circle cx="177" cy="460" r="11"/><circle cx="232" cy="460" r="11"/><circle cx="287" cy="460" r="11"/><circle cx="342" cy="460" r="11"/>
+        </g>
+        <rect x="10" y="620" width="390" height="34" fill="var(--line)" class="out"/>
+        <rect x="10" y="654" width="390" height="330" fill="var(--sand)"/>
+        <rect x="430" y="700" width="350" height="24" fill="#D9D3C5" class="out"/>
+        <rect x="430" y="724" width="350" height="260" fill="var(--sand)"/>
+
+        <!-- chai cup -->
+        <g transform="translate(500 652)">
+          <clipPath id="cupClip"><path d="M-30 0 H30 L24 48 Q0 56 -24 48 Z"/></clipPath>
+          <path d="M30 10 q24 2 14 26 q-4 6 -14 6" class="out" fill="none"/>
+          <path d="M-30 0 H30 L24 48 Q0 56 -24 48 Z" fill="#fff" class="out"/>
+          <rect id="cupW" x="-30" y="14" width="60" height="44" fill="var(--water)" opacity="0" clip-path="url(#cupClip)"/>
+        </g>
+        <!-- karahi -->
+        <g transform="translate(660 646)">
+          <path d="M-80 0 H80 Q70 54 0 56 Q-70 54 -80 0 Z" fill="#2E3A42" class="out"/>
+          <path d="M-80 4 q-18 -2 -18 10 M80 4 q18 -2 18 10" class="out" fill="none"/>
+          <ellipse id="karW" cx="0" cy="6" rx="72" ry="9" fill="var(--water)" opacity="0"/>
+          <g id="stm" opacity="0" class="out" style="stroke:#9AA5AB;stroke-width:3">
+            <path class="stmp" d="M-30 -10 q-10 -20 0 -40"/><path class="stmp" d="M0 -10 q-10 -20 0 -40"/><path class="stmp" d="M30 -10 q-10 -20 0 -40"/>
+          </g>
+        </g>
+
+        <!-- the glass -->
+        <g id="glass" transform="translate(205 485)">
+          <path d="M-45 0 L45 0 L39 130 Q0 140 -39 130 Z" fill="rgba(255,255,255,.6)" class="out"/>
+          <rect x="-45" y="34" width="90" height="110" fill="var(--water)" opacity=".55" clip-path="url(#glassClip)"/>
+          <rect x="-30" y="20" width="10" height="90" rx="5" fill="#fff" opacity=".6"/>
+        </g>
+
+        <!-- the water goes on to the chai and the karahi -->
+        <path id="wl1" class="flow draw" pathLength="1" d="M205 470 C205 560 340 590 500 646"/>
+        <path id="wl2" class="flow draw" pathLength="1" d="M205 470 C205 540 480 560 660 640"/>
+        <path class="spark sp-w" d="M205 470 C205 560 340 590 500 646"/>
+        <path class="spark sp-w" d="M205 470 C205 540 480 560 660 640"/>
+      </g>
+
+      <g id="main">
+        <path class="pipe" d="M0 500H300"/>
+        <path class="pipe" d="M400 500H760"/>
+        <path id="f1" class="flow rust draw" pathLength="1" d="M0 500H300"/>
+        <path id="f2" class="flow draw" pathLength="1" d="M400 500H760"/>
+        <path class="spark sp-m" d="M400 500H760"/>
+        <g id="hous">
+          <rect x="290" y="476" width="120" height="48" rx="8" fill="#8D979D" class="out"/>
+          <path d="M305 524H395V640Q395 660 375 660H325Q305 660 305 640Z" fill="rgba(255,255,255,.6)" class="out"/>
+          <rect x="335" y="530" width="30" height="100" rx="6" fill="#fff" class="out"/>
+          <path d="M343 540V620M350 540V620M357 540V620" class="out" style="stroke-width:1;opacity:.5"/>
+          <rect id="cartR" x="335" y="530" width="30" height="100" rx="6" fill="var(--rust)" opacity="0"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <section class="panel" id="p0">
+    <div class="copy">
+      <h1 class="ur tag" id="tagline" lang="ur" dir="rtl">پینے کا پانی ہی نہیں، <span class="k">پورے گھر</span> کا پانی</h1>
+      <span class="en">Not just the water you drink. All of your home's water.</span>
+      <span class="cue" aria-hidden="true">↓</span>
+    </div>
+  </section>
+
+  <section class="panel" id="p1">
+    <div class="copy stack">
+      <p lang="ur" dir="rtl" class="ur" data-reveal>ہم سب گلاس روشنی کی طرف اٹھا کر پانی دیکھتے ہیں۔ رنگ صاف لگے تو دل مان جاتا ہے، اور یہی پانی چائے، سبزی اور وضو تک جاتا ہے۔</p>
+      <span class="en">We all hold the glass up to the light to look at our water. If it looks clear, the heart accepts it, and the same water goes into the chai, the sabzi and the wazu.</span>
+    </div>
+  </section>
+
+  <section class="panel" id="p2">
+    <div class="copy stack">
+      <p lang="ur" dir="rtl" class="ur" data-reveal>گھر کو اپنے ہی پانی پر شک نہیں ہونا چاہیے۔</p>
+      <span class="en">A home should never have to doubt its own water.</span>
+    </div>
+  </section>
+
+  <section class="panel" id="p3">
+    <div class="copy stack">
+      <p lang="ur" dir="rtl" class="ur story" data-reveal>2025 میں ہمارے اپنے نل سے ایسا پانی آیا جو پینے کی بات تو دور، نہانے کے لیے بھی صاف نہیں تھا۔</p>
+      <span class="en">In 2025, our own tap ran with water that was not clean enough even to bathe in, let alone drink.</span>
+    </div>
+  </section>
+
+  <section class="panel" id="p4">
+    <div class="copy stack">
+      <p lang="ur" dir="rtl" class="ur story" data-reveal>اسی دن ہم نے طے کیا: ہمارے گھر میں صاف پانی ہی استعمال ہوگا، پینے میں بھی، نہانے میں بھی، وضو میں بھی۔ ہم نے مین لائن پر فلٹر لگایا اور کچن میں آر او۔</p>
+      <span class="en">That same day we decided: only clean water would be used in our home, for drinking, for bathing and for wazu. We fitted a filter on the main line and an RO in the kitchen.</span>
+    </div>
+  </section>
+
+  <section class="panel end" id="p5">
+    <div class="copy">
+      <div class="endname">Alfa Water<small>SYSTEMS</small></div>
+      <div class="pill"><span class="dot"></span><span class="u" lang="ur" dir="rtl">جلد آ رہے ہیں</span><span class="bar"></span><span class="e">Coming soon</span></div>
+    </div>
+  </section>
+</div>
+
+<script src="../js/gsap.min.js"></script>
+<script src="../js/ScrollTrigger.min.js"></script>
+<script src="../js/story.js"></script>
+<script>
+(function(){
+  var S = window.Story, $ = function(s){ return document.querySelector(s); }, $$ = function(s){ return document.querySelectorAll(s); };
+  var svg = $('#scene');
+  function frame(){ svg.setAttribute('viewBox', (window.innerWidth <= 860 && window.innerHeight > 500) ? '0 110 800 700' : '0 0 800 1000'); }
+  frame(); window.addEventListener('resize', frame);
+
+  S.fit($('#tagline'));
+  S.intro($('#tagline'), .4);
+  $$('[data-reveal]').forEach(S.reveal);
+  if(!S.ready) return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  var main = $('#main'), win = $('#win');
+
+  // the page is read-complete without motion: one scene per section, everything drawn
+  if(S.reduce){
+    $('#wl1').style.opacity = 1; $('#wl2').style.opacity = 1; $('#cupW').style.opacity = 1; $('#karW').style.opacity = 1; $('#cartR').style.opacity = .85;
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var w = (e.target.id === 'p3' || e.target.id === 'p4'), end = e.target.id === 'p5';
+      win.style.opacity = w || end ? 0 : 1; main.style.opacity = w ? 1 : 0;
+    }); }, {threshold: .55});
+    $$('.panel').forEach(function(p){ io.observe(p); });
+    return;
+  }
+
+  // start states
+  gsap.set('#glass', {x: 205, y: 485});
+  gsap.set(['#hous'], {y: -320});
+  gsap.set('.sp-w, .sp-m', {opacity: 0});
+  
+  var tl = gsap.timeline({defaults: {ease: 'none'}, scrollTrigger: {trigger: '#track', start: 'top top', end: 'bottom bottom', scrub: .8}});
+  // 0.5 to 1.1: the glass goes up to the grill, the light is behind it
+  tl.to('#glass', {y: 330, duration: .55, ease: 'power2.inOut'}, .55);
+  // 1.1 to 1.9: the same water goes to the chai and the karahi
+  S.draw(tl, $('#wl1'), 1.1, .5);
+  S.draw(tl, $('#wl2'), 1.2, .6);
+  tl.to('.sp-w', {opacity: .65, duration: .15}, 1.75);
+  tl.to('#cupW', {opacity: 1, duration: .2}, 1.65);
+  tl.to('#karW', {opacity: 1, duration: .2}, 1.8);
+  tl.to('#stm', {opacity: .9, duration: .2}, 1.9);
+  // 2.5 to 2.9: our line
+  tl.to(win, {opacity: 0, duration: .35}, 2.5);
+  tl.to(main, {opacity: 1, duration: .35}, 2.6);
+  S.draw(tl, $('#f1'), 3.0, .35);
+  tl.to('#hous', {y: 0, duration: .35, ease: 'bounce.out'}, 3.35);
+  S.draw(tl, $('#f2'), 3.55, .45);
+  tl.to('#cartR', {opacity: .85, duration: .8}, 3.6);
+  tl.to('.sp-m', {opacity: .65, duration: .15}, 3.95);
+  // 4.0 to 4.6: the line goes on to the homes around
+    tl.to('#scene', {opacity: 0, duration: .2}, 4.7);
+  tl.to({}, {duration: .01}, 4.99);
+
+  // ambient life
+  gsap.to('#glow', {opacity: .55, duration: 3, yoyo: true, repeat: -1, ease: 'sine.inOut'});
+  gsap.fromTo('.stmp', {y: 0, opacity: .8}, {y: -26, opacity: 0, duration: 2.6, repeat: -1, stagger: .7, ease: 'none'});
+
+  ScrollTrigger.create({trigger: '#p5', start: 'top 70%', toggleClass: {targets: '#mark', className: 'off'}});
+})();
+</script>
+</body>
+</html>
