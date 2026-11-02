@@ -1,0 +1,92 @@
+/* Alfa Water journey pages: shared style. Temporary colours until the logo and colours are chosen. */
+@font-face{font-family:"Nastaliq";src:url(../fonts/nastaliq-600.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces";src:url(../fonts/fraunces-600.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces";src:url(../fonts/fraunces-400-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Outfit";src:url(../fonts/outfit-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Outfit";src:url(../fonts/outfit-600.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}
+
+:root{
+  color-scheme:light;
+  --page:#F1EEE7;      /* chuna */
+  --paper:#FBFAF7;
+  --ink:#22303A;
+  --soft:#56636C;
+  --line:#D6D0C3;
+  --key:#7E2E57;       /* phalsa, for the key words and the coming soon dot */
+  --water:#5FB8EA;     /* clean water is crystal blue */
+  --water-lt:#BFE6FA;
+  --rust:#B5652A;      /* rust belongs to the dirt only */
+  --sun:#FFF1C9;
+  --pipe:#A5AEB3;
+  --gutter:max(16px,env(safe-area-inset-left,0px));
+  --gutter-r:max(16px,env(safe-area-inset-right,0px));
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--page);color:var(--ink);font-family:"Outfit",system-ui,sans-serif;line-height:1.5;overflow-x:hidden}
+a{color:inherit}
+
+/* the name, fixed top left */
+.mark{position:fixed;z-index:5;left:var(--gutter);top:calc(14px + env(safe-area-inset-top,0px));font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(17px,1.6vw,22px);line-height:1;color:var(--ink);letter-spacing:-.2px;transition:opacity .5s}
+.mark small{display:block;margin-top:.45em;font-family:"Outfit",system-ui,sans-serif;font-weight:600;font-size:.5em;letter-spacing:.42em;color:var(--soft)}
+.mark.off{opacity:0;pointer-events:none}
+
+/* the scene stays, the words scroll over it */
+.track{position:relative}
+.stage{position:sticky;top:0;height:100svh;margin-bottom:-100svh;z-index:0;overflow:hidden}
+.stage svg{position:absolute;left:0;top:0;width:58%;height:100%;display:block;overflow:visible}
+.panel{position:relative;z-index:1;min-height:100svh;display:flex;align-items:center;justify-content:flex-end;padding:0 var(--gutter-r) 0 var(--gutter)}
+.copy{width:min(38%,520px);text-align:right}
+.ur{font-family:"Nastaliq","Noto Nastaliq Urdu",serif;font-weight:600;direction:rtl;color:var(--ink);line-height:2.25;font-size:clamp(21px,2.5vw,34px)}
+.ur .k{color:var(--key)}
+.ur.tag{white-space:nowrap;display:block;font-size:clamp(20px,2.7vw,38px)}
+.ur.small{font-size:clamp(15px,1.5vw,20px);line-height:2.1;color:var(--soft)}
+.en{display:block;margin-top:10px;direction:ltr;font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(14px,1.35vw,18px);line-height:1.5;color:var(--soft)}
+.stack>*+*{margin-top:18px}
+
+.pill{display:inline-flex;align-items:center;gap:14px;padding:10px 22px 10px 18px;border-radius:999px;border:1.5px solid var(--line);background:rgba(255,255,255,.55)}
+.pill .dot{width:10px;height:10px;border-radius:50%;background:var(--key);position:relative}
+.pill .dot::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--key);opacity:0;animation:ping 2.2s ease-out infinite}
+@keyframes ping{0%{opacity:.6;transform:scale(.6)}100%{opacity:0;transform:scale(1.8)}}
+.pill .u,.pill .e{white-space:nowrap}
+.pill .u{font-family:"Nastaliq","Noto Nastaliq Urdu",serif;font-weight:600;font-size:20px;line-height:1.9;direction:rtl}
+.pill .e{font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase}
+.pill .bar{width:1px;height:22px;background:var(--line)}
+
+.endname{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(40px,6vw,84px);line-height:1;letter-spacing:-.5px}
+.endname small{display:block;margin-top:10px;font-family:"Outfit",system-ui,sans-serif;font-weight:600;font-size:clamp(11px,1vw,14px);letter-spacing:.42em;color:var(--soft);padding-left:.42em}
+.panel.end{justify-content:center;text-align:center;background:var(--page);z-index:2}
+.panel.end .copy{width:min(92%,760px);text-align:center;display:flex;flex-direction:column;align-items:center;gap:clamp(18px,3vw,32px)}
+
+/* scene drawing helpers */
+.pipe{fill:none;stroke:var(--pipe);stroke-linecap:round;stroke-linejoin:round;stroke-width:14}
+.flow{fill:none;stroke:var(--water);stroke-linecap:round;stroke-linejoin:round;stroke-width:6}
+.flow.rust{stroke:var(--rust)}
+.draw{stroke-dasharray:1;stroke-dashoffset:0}
+.out{fill:none;stroke:var(--ink);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.lbl{font-family:"Nastaliq","Noto Nastaliq Urdu",serif;font-weight:600;fill:var(--ink);font-size:30px;direction:rtl}
+.lbl.en{font-family:"Outfit",system-ui,sans-serif;font-weight:600;font-style:normal;font-size:12px;letter-spacing:.14em;fill:var(--soft);margin:0;display:inline;line-height:1}
+
+@media (max-width:860px){
+  .stage svg{width:100%;height:60%;top:calc(34px + env(safe-area-inset-top,0px))}
+  .panel{align-items:flex-end;justify-content:center;padding-bottom:calc(5svh + env(safe-area-inset-bottom,0px))}
+  .copy{width:100%;text-align:center;padding:34px 0 0;background:linear-gradient(to top,var(--page) 74%,rgba(241,238,231,0))}
+  .en{text-align:center}
+  .ur{font-size:clamp(20px,5.6vw,28px)}
+  .ur.tag{font-size:clamp(18px,5vw,24px)}
+  .ur.small{font-size:16px}
+  .panel.end{align-items:center}
+  .panel.end .copy{background:none;padding:0}
+  .pill{gap:10px;padding:8px 16px 8px 14px}
+  .pill .u{font-size:18px}
+  .pill .e{font-size:12px;letter-spacing:.16em}
+}
+@media (max-width:860px) and (max-height:700px){
+  .stage svg{height:42%}
+  .copy{padding-top:16px}
+  .ur{font-size:clamp(17px,4.6vw,22px);line-height:2.1}
+  .en{font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
